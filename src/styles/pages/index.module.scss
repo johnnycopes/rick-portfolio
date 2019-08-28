@@ -1,0 +1,53 @@
+@import "../styles.scss";
+
+.home {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 0 10px;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $bg-color;
+}
+
+.name {
+  margin-bottom: 3rem;
+  animation: enter-top 1.5s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.accent {
+  color: $action-color;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  opacity: 0;
+  animation: enter-bottom 1.5s 300ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.link {
+  margin-bottom: 1rem;
+}
+
+.bird {
+  width: 25px;
+}
+
+@media screen and (min-width: 350px) {
+  .links {
+    flex-direction: row;
+  }
+}
