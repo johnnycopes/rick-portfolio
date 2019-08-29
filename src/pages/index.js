@@ -1,27 +1,28 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import styles from "../styles/pages/index.module.scss"
+import Name from "../components/name"
 import Button from "../components/button"
+import InternalLink from "../components/internal-link"
 
 const IndexPage = () => (
   <div className={styles.home}>
     <h1 className={styles.name}>
-      <span className={styles.accent}>Rick</span> Segal
+      <Name />
     </h1>
     <div className={styles.links}>
-      <Link className={styles.link}
-        to="/work"
+      <InternalLink className={styles.link}
+        link="/work"
         >
         <Button>work</Button>
-      </Link>
-      <Link className={styles.link}
-        to="/about"
+      </InternalLink>
+      <InternalLink className={styles.link}
+        link="/about"
         >
         <Button>about</Button>
-      </Link>
-      <Link className={styles.link}
-        to="/misc"
+      </InternalLink>
+      <InternalLink className={styles.link}
+        link="/misc"
         >
         <Button>
           <img className={styles.bird}
@@ -29,7 +30,7 @@ const IndexPage = () => (
             alt="Misc"
           />
         </Button>
-      </Link>
+      </InternalLink>
     </div>
   </div>
 )

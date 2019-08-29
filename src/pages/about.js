@@ -3,6 +3,7 @@ import React from "react"
 import styles from "../styles/pages/about.module.scss"
 import Layout from "../components/layout"
 import Button from "../components/button"
+import ExternalLink from "../components/external-link";
 
 const AboutPage = () => (
   <Layout>
@@ -16,38 +17,22 @@ const AboutPage = () => (
           Hey, it's me — Rick.
         </h2>
         <div className={styles.buttons}>
-          <a href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ExternalLink link="https://www.linkedin.com/in/rsegal">
             <Button>résumé</Button>
-          </a>
-          <a href="https://www.linkedin.com/in/rsegal"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
+          </ExternalLink>
+          <ExternalLink link="https://www.linkedin.com/in/rsegal">
             <Button>linkedin</Button>
-          </a>
-          <a href="https://www.instagram.com/riiyaack"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
+          </ExternalLink>
+          <ExternalLink link="https://www.instagram.com/riiyaack">
             <Button>instagram</Button>
-          </a>
-          <a href="https://www.wikipedia.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
+          </ExternalLink>
+          <ExternalLink link="https://www.wikipedia.org">
             <Button>learn too much</Button>
-          </a>
+          </ExternalLink>
         </div>
-        <a className={styles.email}
-          href="mailto:risegal4@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
+        <ExternalLink link="mailto:risegal4@gmail.com">
           <h4>risegal4@gmail.com</h4>
-        </a>
+        </ExternalLink>
       </div>
     </div>
   </Layout>

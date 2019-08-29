@@ -24,31 +24,18 @@
 .item {
   padding: 0.7rem;
   position: relative;
-  transition: $fast-transition;
-
-  &:hover {
-    color: $action-color;
-  }
-
-  &--active {
-    color: $action-color;
-    text-decoration: underline; 
-  }
-
-  &__divider {
-    margin-right: 0.5rem;
-
-    &:hover {
-      color: $font-color;
-    }
-  }
-
-  &__misc {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 0 !important;
-  }
 }
+
+.divider {
+  margin-right: 0.5rem;
+}
+
+.misc {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0 !important;
+}
+
 
 .icon {
   padding-left: 0.5rem;
@@ -57,14 +44,16 @@
 
 .name {
   padding-left: 0 !important;
-  text-transform: uppercase;
-  font-weight: 400;
 }
 
 .bird {
   width: 2rem;
   position: relative;
   top: 3px;
+}
+
+.active {
+  text-decoration: underline; 
 }
 
 
