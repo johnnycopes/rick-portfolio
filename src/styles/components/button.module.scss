@@ -14,11 +14,12 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   transition: color 250ms;
+  font-size: inherit;
 
   &::before {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: map-get($z-index, button-animation);
     top: 0;
     bottom: 0;
     left: 0;

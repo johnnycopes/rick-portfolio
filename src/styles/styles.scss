@@ -3,8 +3,8 @@
 // ===================
 
 $font-color: #212121;
-$light-color: #ddd;
 $bg-color: #fff;
+$light-color: #ddd;
 $action-color: #fb0006;
 
 
@@ -45,6 +45,20 @@ $medium-transition: all 250ms ease-in-out;
     opacity: 1;
   }
 }
+
+
+// ===================
+// VARIABLES
+// ===================
+
+$app: (
+  header: 40px
+);
+
+$z-index: (
+  header: 1,
+  button-animation: -1
+);
 
 
 // ===================

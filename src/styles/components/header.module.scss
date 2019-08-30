@@ -2,9 +2,12 @@
 
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background: $bg-color;
-  z-index: 3;
+  z-index: map-get($z-index, header);
+  height: map-get($app, header);
 }
 
 .container {
