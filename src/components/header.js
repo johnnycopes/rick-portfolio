@@ -2,9 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import styles from "../styles/components/header.module.scss"
-import Name from "../components/name"
-import InternalLink from "../components/internal-link"
-import ExternalLink from "../components/external-link"
+import Name from "./Name"
+import InternalLink from "./InternalLink"
+import ExternalLink from "./ExternalLink"
 
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>

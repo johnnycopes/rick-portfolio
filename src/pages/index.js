@@ -1,9 +1,9 @@
 import React from "react"
 
 import styles from "../styles/pages/index.module.scss"
-import Name from "../components/name"
-import Button from "../components/button"
-import InternalLink from "../components/internal-link"
+import Name from "../components/Name"
+import Button from "../components/Button"
+import InternalLink from "../components/InternalLink"
 
 const IndexPage = () => (
   <div className={styles.home}>

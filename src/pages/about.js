@@ -1,9 +1,9 @@
 import React from "react"
 
 import styles from "../styles/pages/about.module.scss"
-import Layout from "../components/layout"
-import Button from "../components/button"
-import ExternalLink from "../components/external-link";
+import Layout from "../components/Layout"
+import Button from "../components/Button"
+import ExternalLink from "../components/ExternalLink";
 
 const AboutPage = () => (
   <Layout>

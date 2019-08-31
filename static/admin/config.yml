@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: johnnycopes/rick-portfolio-new
   branch: master # Branch to update (optional; defaults to master)
-# This line should *not* be indented
 
 publish_mode: editorial_workflow
 
@@ -10,11 +10,21 @@ public_folder: /img # The src attribute for uploaded media will begin with /img
 
 collections:
   - name: "work"
-  - label: "Work"
-  - folder: "src/pages/work"
-  - create: true
-  - slug: "{{slug}}"
-  - fields:
-      - {label: "Headline", name: "headline", widget: "string"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+    label: "Work"
+    folder: "src/pages/work"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Company / Product", name: "headline", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - label: "Videos"
+        name: "videos"
+        widget: "list"
+        fields: 
+          - label: "Videos"
+            name: "videos"
+            widget: "object"
+            fields:
+              - { label: "Type", name: "type", widget: "string", default: "TV" }
+              - { label: "Vimeo URL", name: "url", widget: "string" }
