@@ -1,6 +1,8 @@
 ---
 title: Modern Mainstream
 headline: Windows
+isActive: true
+order: 3
 thumbnail: /img/modern-mainstream.jpg
 videos:
   - videos:
