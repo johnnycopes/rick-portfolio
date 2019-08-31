@@ -1,0 +1,78 @@
+@import "../styles.scss";
+
+.project {
+  position: relative;
+  overflow: hidden;
+  height: 210px;
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  transition: all 400ms ease-in-out;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: $medium-transition;
+  background: red;
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+    opacity: 1;
+    transition: $medium-transition;
+  }
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: $bg-color;
+  position: relative;
+  opacity: 1;
+  z-index: 2;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  opacity: 1;
+  transition: $medium-transition;
+}
+
+.headline {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+
+@media screen and (min-width: 1050px) {
+
+  .project {
+    .container {
+      opacity: 0;
+    }
+
+    opacity: 0;
+
+    &:hover {
+      transform: $scale;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:hover .container {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}

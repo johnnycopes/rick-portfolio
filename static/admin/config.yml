@@ -12,11 +12,16 @@ collections:
   - name: "work"
     label: "Work"
     folder: "src/pages/work"
+    identifier_field: name
+    list_fields: ['title', 'headline', 'ordinal']
+    list_fields_seperator: ' - '
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Company / Product", name: "headline", widget: "string" }
+      - { label: "Show in site", name: "isActive", widget: "boolean", default: true }
+      - { label: "Order", name: "order", widget: "number" }
       - { label: "Thumbnail", name: "thumbnail", widget: "image" }
       - label: "Videos"
         name: "videos"

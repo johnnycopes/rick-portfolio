@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
+import cx from "classnames"
 
-import styles from "../styles/components/header.module.scss"
+import styles from "../styles/components/Header.module.scss"
 import Name from "./Name"
 import InternalLink from "./InternalLink"
 import ExternalLink from "./ExternalLink"
@@ -10,30 +11,30 @@ const Header = ({ siteTitle }) => (
   <header className={styles.header}>
     <div className={styles.container}>
       <nav className={styles.left}>
-        <InternalLink className={`${styles.item} ${styles.name}`}
+        <InternalLink className={cx(styles.item, styles.name)}
           link="/"
           >
           <Name />
         </InternalLink>
-        <span className={`${styles.item} ${styles.divider}`}>
+        <span className={cx(styles.item, styles.divider)}>
           |
         </span>
-        <ExternalLink className={`${styles.item} ${styles.icon}`}
+        <ExternalLink className={cx(styles.item, styles.icon)}
           link="mailto:risegal4@gmail.com"
           >
           <i className="fa fa-envelope-o" aria-hidden="true"></i>
         </ExternalLink>
-        <ExternalLink className={`${styles.item} ${styles.icon}`}
+        <ExternalLink className={cx(styles.item, styles.icon)}
           link="https://www.linkedin.com/in/rsegal"
           >
           <i className="fa fa-linkedin-square" aria-hidden="true"></i>
         </ExternalLink>
-        <ExternalLink className={`${styles.item} ${styles.icon}`}
+        <ExternalLink className={cx(styles.item, styles.icon)}
           link="https://www.instagram.com/riiyaack/"
           >
           <i className="fa fa-instagram" aria-hidden="true"></i>
         </ExternalLink>
-        <ExternalLink className={`${styles.item} ${styles.icon}`}
+        <ExternalLink className={cx(styles.item, styles.icon)}
           link="https://twitter.com/seinfeld2000?lang=en"
           >
           <i className="fa fa-twitter-square" aria-hidden="true"></i>
@@ -52,7 +53,7 @@ const Header = ({ siteTitle }) => (
           >
           about
         </InternalLink>
-        <InternalLink className={`${styles.item} ${styles.misc}`}
+        <InternalLink className={cx(styles.item, styles.misc)}
           link="/misc"
           >
           <img className={styles.bird}

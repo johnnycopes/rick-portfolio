@@ -1,6 +1,6 @@
 import React from "react"
 
-import styles from "../styles/components/name.module.scss"
+import styles from "../styles/components/Name.module.scss"
 
 const Name = () => (
   <span className={styles.name}>

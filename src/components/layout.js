@@ -1,17 +1,26 @@
 import React from "react"
 import PropTypes from "prop-types"
+import cx from "classnames"
 
-import styles from "../styles/components/layout.module.scss"
+import styles from "../styles/components/Layout.module.scss"
 import Header from "./Header"
 
-const Layout = ({ children }) => (
-  <>
-    <Header />
-    <main className={styles.content}>
-      {children}
-    </main>
-  </>
-)
+const Layout = ({ verticallyCentered, children }) => {
+
+  return (
+    <>
+      <Header />
+      <div className={styles.wrapper}>
+        <div className={cx(
+          styles.content,
+          {[styles.verticallyCentered]: verticallyCentered}
+          )}>
+          {children}
+        </div>
+      </div>
+    </>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

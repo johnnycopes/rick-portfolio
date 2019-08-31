@@ -6,7 +6,7 @@ import Button from "../components/Button"
 import ExternalLink from "../components/ExternalLink";
 
 const AboutPage = () => (
-  <Layout>
+  <Layout verticallyCentered={true}>
     <div className={styles.about}>
       <img className={styles.pic}
         src="assets/img/rick_prof_pic.jpeg"

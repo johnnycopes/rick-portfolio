@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
+import cx from "classnames"
 
-import styles from "../styles/components/link.module.scss"
+import styles from "../styles/components/Link.module.scss"
 
 const InternalLink = ({ link, className, children }) => (
-  <Link className={`${styles.link} ${className}`}
+  <Link className={cx(styles.link, className)}
     activeClassName={styles.active}
     to={link}
     >

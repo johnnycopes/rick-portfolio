@@ -1,0 +1,16 @@
+@import "../styles.scss";
+
+.work {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, minmax(300px, 330px));
+  grid-gap: 4rem;
+
+  @media screen and (min-width: 700px) {
+    grid-template-columns: repeat(2, minmax(300px, 330px));
+  }
+
+  @media screen and (min-width: 1050px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
