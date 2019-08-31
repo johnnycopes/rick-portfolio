@@ -6,5 +6,8 @@ videos:
   - videos:
       type: TV
       url: 'https://player.vimeo.com/video/309492691'
+  - videos:
+      type: TV
+      url: 'https://player.vimeo.com/video/309490659'
 ---
 
