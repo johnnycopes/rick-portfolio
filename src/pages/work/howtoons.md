@@ -1,6 +1,8 @@
 ---
 title: Howtoons
 headline: Office 365
+isActive: true
+order: 2
 thumbnail: /img/howtoons.jpg
 videos:
   - videos:
