@@ -1,6 +1,6 @@
 @import "../styles.scss";
 
-.project {
+.tile {
   position: relative;
   overflow: hidden;
   height: 210px;
@@ -10,8 +10,8 @@
   transition: all 400ms ease-in-out;
   background-position: center center;
   background-repeat: no-repeat;
+  background-image: url("http://placeimg.com/640/360/any"); // TODO: remove this and replace with gatsby-background-image
   transition: $medium-transition;
-  background: red;
 
   &::after {
     content: "";
@@ -21,7 +21,7 @@
     height: 100%;
     width: 100%;
     background: rgba(0,0,0,0.6);
-    z-index: 1;
+    z-index: map-get($app, project-backdrop);
     opacity: 1;
     transition: $medium-transition;
   }
@@ -53,14 +53,15 @@
 
 
 @media screen and (min-width: 1050px) {
+  .container {
+    opacity: 0;
+  }
 
-  .project {
-    .container {
+  .tile {
+    &::after {
       opacity: 0;
     }
-
-    opacity: 0;
-
+    
     &:hover {
       transform: $scale;
     }
@@ -74,5 +75,4 @@
       transform: translateY(0);
     }
   }
-
 }

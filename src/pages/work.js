@@ -3,13 +3,13 @@ import { graphql } from "gatsby"
 
 import styles from "../styles/pages/work.module.scss"
 import Layout from "../components/Layout"
-import Project from "../components/Project"
+import ProjectTile from "../components/ProjectTile";
 
 const WorkPage = ({ data }) => (
   <Layout>
     <div className={styles.work}>
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
-        <Project
+        <ProjectTile
           key={index}
           title={node.frontmatter.title}
           headline={node.frontmatter.headline}
@@ -21,7 +21,7 @@ const WorkPage = ({ data }) => (
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___order}) {
       edges {
         node {
           frontmatter {

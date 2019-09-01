@@ -1,6 +1,8 @@
 ---
 title: NFL
 headline: Surface Pro
+isActive: true
+order: 1
 thumbnail: /img/nfl.jpg
 videos:
   - videos:

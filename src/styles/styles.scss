@@ -56,7 +56,9 @@ $app: (
 );
 
 $z-index: (
-  header: 1,
+  header: 3,
+  project-image: 2,
+  project-backdrop: 1,
   button-animation: -1
 );
 

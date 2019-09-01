@@ -13,8 +13,6 @@ collections:
     label: "Work"
     folder: "src/pages/work"
     identifier_field: name
-    list_fields: ['title', 'headline', 'ordinal']
-    list_fields_seperator: ' - '
     create: true
     slug: "{{slug}}"
     fields:

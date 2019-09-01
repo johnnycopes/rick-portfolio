@@ -1,8 +1,8 @@
 import React from "react"
-import styles from "../styles/components/Project.module.scss"
+import styles from "../styles/components/ProjectTile.module.scss"
 
-const Project = ({ title, headline }) => (
-  <div className={styles.project}>
+const ProjectTile = ({ title, headline }) => (
+  <div className={styles.tile}>
     <div className={styles.splash}>
       <div className={styles.container}>
         <div className={styles.headline}>
@@ -16,4 +16,4 @@ const Project = ({ title, headline }) => (
   </div >
 )
 
-export default Project
+export default ProjectTile
