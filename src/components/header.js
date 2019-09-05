@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import cx from "classnames"
+import { FaRegEnvelope, FaLinkedin, FaInstagram, FaTwitterSquare } from "react-icons/fa"
 
 import styles from "../styles/components/Header.module.scss"
 import Name from "./Name"
@@ -22,24 +23,22 @@ const Header = ({ siteTitle }) => (
         <ExternalLink className={cx(styles.item, styles.icon)}
           link="mailto:risegal4@gmail.com"
           >
-          <i className="fa fa-envelope-o" aria-hidden="true"></i>
+          <FaRegEnvelope />
         </ExternalLink>
         <ExternalLink className={cx(styles.item, styles.icon)}
           link="https://www.linkedin.com/in/rsegal"
           >
-          <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+          <FaLinkedin />
         </ExternalLink>
         <ExternalLink className={cx(styles.item, styles.icon)}
           link="https://www.instagram.com/riiyaack/"
           >
-          <i className="fa fa-instagram" aria-hidden="true"></i>
+          <FaInstagram />
         </ExternalLink>
         <ExternalLink className={cx(styles.item, styles.icon)}
           link="https://twitter.com/seinfeld2000?lang=en"
           >
-          <i className="fa fa-twitter-square" aria-hidden="true"></i>
-        </ExternalLink>
-        <ExternalLink>
+          <FaTwitterSquare />
         </ExternalLink>
       </nav>
       <nav className={styles.right}>

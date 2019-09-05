@@ -1,6 +1,26 @@
 @import "../styles.scss";
 
 .video {
-  background: cadetblue;
-  color: white;
+  // background: url('/assets/img/loading.svg') center center no-repeat; // TODO: add loader once backgroundimages are sorted
+  background-size: 50px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.type {
+  margin-top: 2rem;
+  text-align: center;
 }

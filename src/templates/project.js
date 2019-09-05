@@ -17,8 +17,8 @@ const ProjectTemplate = ({ data }) => {
           >
           <Button>back to work</Button>
         </InternalLink>
-        <div className={styles.project__info}>
-          <p className={styles.project__headline}>
+        <div className={styles.info}>
+          <p className={styles.headline}>
             {project.frontmatter.headline}
           </p>
           <p className={styles.title}>
@@ -27,11 +27,13 @@ const ProjectTemplate = ({ data }) => {
         </div>
       </div>
       {project.frontmatter.videos.map((video, index) => (
-        <Video
-          key={index}
-          type={video.type}
-          url={video.url}
-        />
+        <div className={styles.video}>
+          <Video
+            key={index}
+            type={video.type}
+            url={video.url}
+          />
+        </div>
       ))}
     </Layout>
   )

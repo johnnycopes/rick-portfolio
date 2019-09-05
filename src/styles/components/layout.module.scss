@@ -7,11 +7,11 @@
 .content {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - #{map-get($app, header)});
   width: 95%;
   max-width: 960px;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding: 2rem 0 4rem;
   text-align: center;
 }
 
