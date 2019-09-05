@@ -28,6 +28,7 @@ export const query = graphql`
             title
             headline
             thumbnail
+            isActive
           }
         }
       }

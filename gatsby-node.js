@@ -32,19 +32,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     }
   `)
-
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    console.log(node);
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/project.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: node.fields.slug,
+      },
+    })
+  })
+  
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: projectTemplate,
-      context: {}, // additional data can be passed via context
-    })
-  })
 }
 

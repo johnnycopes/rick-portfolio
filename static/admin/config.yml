@@ -25,9 +25,5 @@ collections:
         name: "videos"
         widget: "list"
         fields: 
-          - label: "Videos"
-            name: "videos"
-            widget: "object"
-            fields:
-              - { label: "Type", name: "type", widget: "string", default: "TV" }
-              - { label: "Vimeo URL", name: "url", widget: "string" }
+          - { label: "Type", name: "type", widget: "string", default: "TV" }
+          - { label: "Vimeo URL", name: "url", widget: "string" }
