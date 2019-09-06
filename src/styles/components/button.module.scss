@@ -15,6 +15,8 @@
   box-shadow: 0 0 1px transparent;
   transition: color 250ms;
   font-size: inherit;
+  font-weight: map-get($font-weight, normal);
+  font-family: $font-stack;
 
   &::before {
     content: "";

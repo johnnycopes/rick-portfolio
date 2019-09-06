@@ -30,7 +30,7 @@
 }
 
 .divider {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .misc {
@@ -43,6 +43,8 @@
 .icon {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  position: relative;
+  top: 2px;
 }
 
 .name {

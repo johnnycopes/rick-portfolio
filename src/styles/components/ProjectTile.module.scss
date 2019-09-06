@@ -48,7 +48,7 @@
 
 .headline {
   margin-bottom: 1rem;
-  font-weight: 400;
+  font-weight: map-get($font-weight, bold);
 }
 
 

@@ -2,7 +2,7 @@
 
 .name {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: map-get($font-weight, bold);
 }
 
 .accent {

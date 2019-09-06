@@ -14,6 +14,11 @@ $action-color: #fb0006;
 
 $font-stack: 'Roboto', 'HelveticaNeue', 'Helvetica Neue', 'Helevtica', 'Lucida Grande', 'Trebuchet MS', sans-serif;
 
+$font-weight: (
+  normal: 300,
+  bold: 400
+);
+
 
 // ===================
 // TRANSITIONS
@@ -127,13 +132,13 @@ html {
 body {
   margin: 0;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: map-get($font-weight, normal);
   font-family: $font-stack;
   min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
-  font-weight: 300;
+  font-weight: map-get($font-weight, normal);
 }
 
 h1 { font-size: 3.157em; }

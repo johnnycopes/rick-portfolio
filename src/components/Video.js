@@ -6,6 +6,7 @@ const Video = ({ type, url }) => (
   <div className={styles.video}>
     <iframe
       src={url}
+      title={url}
       frameborder='0'
       webkitAllowFullScreen
       mozallowfullscreen

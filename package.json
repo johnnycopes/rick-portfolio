@@ -12,6 +12,7 @@
     "gatsby-plugin-netlify": "^2.1.10",
     "gatsby-plugin-netlify-cms": "^4.1.12",
     "gatsby-plugin-offline": "^2.2.7",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.4",
     "gatsby-plugin-sass": "^2.1.12",
     "gatsby-plugin-sharp": "^2.2.13",
