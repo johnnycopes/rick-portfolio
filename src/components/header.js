@@ -7,6 +7,7 @@ import styles from "../styles/components/Header.module.scss"
 import Name from "./Name"
 import InternalLink from "./InternalLink"
 import ExternalLink from "./ExternalLink"
+import Bird from "./Bird";
 
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
@@ -46,7 +47,7 @@ const Header = ({ siteTitle }) => (
           link="/work"
           >
           work
-       </InternalLink>
+        </InternalLink>
         <InternalLink className={styles.item}
           link="/about"
           >
@@ -55,10 +56,7 @@ const Header = ({ siteTitle }) => (
         <InternalLink className={cx(styles.item, styles.misc)}
           link="/misc"
           >
-          <img className={styles.bird}
-            src="assets/img/seagull.png"
-            alt="misc"
-          />
+          <Bird />
         </InternalLink>
       </nav>
     </div>
