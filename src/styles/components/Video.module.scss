@@ -1,7 +1,7 @@
 @import "../styles.scss";
 
 .video {
-  // background: url('/assets/img/loading.svg') center center no-repeat; // TODO: add loader once backgroundimages are sorted
+  background: url('../../../static/assets/loader.svg') center center no-repeat;
   background-size: 50px;
   position: relative;
   padding-bottom: 56.25%;
@@ -23,4 +23,12 @@
 .type {
   margin-top: 2rem;
   text-align: center;
+}
+
+ @media screen and (min-width: 500px) {
+
+  .video {
+    background-size: 100px;
+  }
+
 }

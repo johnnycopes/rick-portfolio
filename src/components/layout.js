@@ -23,7 +23,7 @@ const Layout = ({ verticallyCentered, children }) => {
 }
 
 Layout.propTypes = {
-  verticallyCentered: PropTypes.boolean,
+  verticallyCentered: PropTypes.bool,
   children: PropTypes.node.isRequired,
 }
 
