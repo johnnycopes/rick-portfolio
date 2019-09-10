@@ -8,7 +8,6 @@ import Header from "./Header"
 const Layout = ({ verticallyCentered, children }) => (
   <>
     <Header />
-    afj
     <div className={styles.wrapper}>
       <div className={cx(
         styles.content,
