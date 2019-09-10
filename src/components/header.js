@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import cx from "classnames"
 import { FaRegEnvelope, FaLinkedin, FaInstagram, FaTwitterSquare } from "react-icons/fa"
 
@@ -9,7 +8,7 @@ import InternalLink from "./InternalLink"
 import ExternalLink from "./ExternalLink"
 import Bird from "./Bird";
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className={styles.header}>
     <div className={styles.container}>
       <nav className={styles.left}>
@@ -62,13 +61,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

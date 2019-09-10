@@ -4,19 +4,18 @@ import { graphql } from "gatsby"
 import styles from "../styles/pages/work.module.scss"
 import Layout from "../components/Layout"
 import ProjectTile from "../components/ProjectTile";
-import InternalLink from "../components/InternalLink"
 
 const WorkPage = ({ data }) => (
   <Layout>
     <div className={styles.work}>
       {data.allMarkdownRemark.edges.map(({ node }, index) => (
-        <InternalLink link={node.fields.slug}>
-          <ProjectTile
-            key={index}
-            title={node.frontmatter.title}
-            headline={node.frontmatter.headline}
-          />
-        </InternalLink>
+        <ProjectTile
+          key={index}
+          link={node.fields.slug}
+          title={node.frontmatter.title}
+          headline={node.frontmatter.headline}
+          image={node.frontmatter.thumbnail.childImageSharp.fluid}
+        />
       ))}
     </div>
   </Layout>
@@ -28,17 +27,22 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            isActive
             title
             headline
-            thumbnail
-            isActive
+            thumbnail {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug
           }
         }
       }
-      totalCount
     }
   }
 `

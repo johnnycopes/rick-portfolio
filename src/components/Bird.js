@@ -7,7 +7,7 @@ import styles from "../styles/components/Bird.module.scss"
 const Bird = () => {
   const data = useStaticQuery(graphql`
     query BirdQuery {
-      file(relativePath: { eq: "images/seagull.png" }) {
+      file(name: { eq: "seagull" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -17,7 +17,8 @@ const Bird = () => {
     }
   `)
   return (
-    <Img className={styles.bird}
+    <Img
+      className={styles.bird}
       fluid={data.file.childImageSharp.fluid}
     />
   )

@@ -5,14 +5,13 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: static/img # Media files will be stored in the repo under static/img
-public_folder: /img # The src attribute for uploaded media will begin with /img
+media_folder: static/assets # Media files will be stored in the repo under `static/assets`
+public_folder: assets # The src attribute for uploaded media will begin with `assets`
 
 collections:
   - name: "work"
     label: "Work"
     folder: "src/pages/work"
-    identifier_field: name
     create: true
     slug: "{{slug}}"
     fields:

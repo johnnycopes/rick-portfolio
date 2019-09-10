@@ -1,7 +1,9 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import styles from "../styles/components/Video.module.scss"
 
+// TODO: refactor this to use Gatsby iframe/vimeo embed
 const Video = ({ type, url }) => (
   <div className={styles.video}>
     <iframe
@@ -17,5 +19,10 @@ const Video = ({ type, url }) => (
     </p>
   </div>
 )
+
+Video.propTypes = {
+  type: PropTypes.string,
+  url: PropTypes.string.isRequired
+}
 
 export default Video
