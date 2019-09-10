@@ -1,4 +1,5 @@
 ---
-image: /assets/rick_prof_pic.jpeg
+image: /assets/seagull.png
+resume: /assets/pdf.pdf
 ---
 
