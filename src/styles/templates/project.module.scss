@@ -67,7 +67,6 @@
 }
 
 @media screen and (min-width: 500px) {
-
   .header {
     margin-bottom: 5rem;
   }
@@ -79,12 +78,10 @@
   .embed-container {
     background-size: 100px;
   }
-
 }
 
 
 @media screen and (min-width: 700px) {
-
   .slideshow {
     display: grid;
     grid-template-columns: 100px 1fr 100px;
@@ -111,5 +108,4 @@
       grid-column: 3;
     }
   }
-
 }

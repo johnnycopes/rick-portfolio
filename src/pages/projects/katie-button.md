@@ -1,4 +1,5 @@
 ---
+templateKey: project
 title: Katie Button
 headline: Windows 10
 isActive: true

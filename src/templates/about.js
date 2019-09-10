@@ -1,15 +1,18 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import styles from "../styles/pages/about.module.scss"
 import Layout from "../components/Layout"
 import Button from "../components/Button"
 import ExternalLink from "../components/ExternalLink";
 
-const AboutPage = () => (
+const AboutTemplate = ({ data }) => (
   <Layout verticallyCentered={true}>
     <div className={styles.about}>
-      <img className={styles.pic}
-        src="assets/img/rick_prof_pic.jpeg"
+      <Img
+        className={styles.pic}
+        fluid={data.markdownRemark.frontmatter.image.childImageSharp.fluid}
         alt="Rick Segal"
       />
       <div className={styles.bio}>
@@ -17,7 +20,7 @@ const AboutPage = () => (
           Hey, it's me — Rick.
         </h2>
         <div className={styles.buttons}>
-          <ExternalLink link="https://www.linkedin.com/in/rsegal">
+          <ExternalLink link={data.file.publicURL}>
             <Button>résumé</Button>
           </ExternalLink>
           <ExternalLink link="https://www.linkedin.com/in/rsegal">
@@ -38,4 +41,23 @@ const AboutPage = () => (
   </Layout>
 )
 
-export default AboutPage
+export const query = graphql`
+  query About($id: String!) {
+    file(extension: {eq: "pdf"}) {
+      publicURL
+    }
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+export default AboutTemplate

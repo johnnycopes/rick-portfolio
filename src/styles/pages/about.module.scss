@@ -55,11 +55,10 @@
     margin: 0;
     width: 100%;
     max-width: none;
-    max-height: none;
+    max-height: calc(100vh - #{map-get($app, header)});
   }
 
   .bio {
     grid-column: 2;
   }
-
 }

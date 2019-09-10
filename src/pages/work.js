@@ -23,7 +23,10 @@ const WorkPage = ({ data }) => (
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {fields: frontmatter___order}) {
+    allMarkdownRemark(
+      sort: {fields: frontmatter___order},
+      filter: {frontmatter: {templateKey: {eq: "project"}}}
+    ) {
       edges {
         node {
           frontmatter {
