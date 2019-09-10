@@ -9,8 +9,8 @@ media_folder: static/assets # Media files will be stored in the repo under `stat
 public_folder: assets # The src attribute for uploaded media will begin with `assets`
 
 collections:
-  - name: "work"
-    label: "Work"
+  - label: "Work"
+    name: "work"
     folder: "src/pages/work"
     create: true
     slug: "{{slug}}"
@@ -26,3 +26,11 @@ collections:
         fields: 
           - { label: "Type", name: "type", widget: "string", default: "TV" }
           - { label: "Vimeo URL", name: "url", widget: "string" }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - { label: "Profile Image", name: "image", widget: "image" }
