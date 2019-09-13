@@ -1,5 +1,6 @@
 ---
 templateKey: about
-image: /assets/rick.jpeg
-resume: /assets/rick-segal-resume.pdf
+image: /assets/seagull.png
+resume: /assets/pdf.pdf
 ---
+
