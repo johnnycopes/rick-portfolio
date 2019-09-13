@@ -11,10 +11,10 @@ const MiscTemplate = ({ data }) => (
     verticallyCentered={true}
     horizontallyCentered={true}
     >
-    <h2 class={styles.header}>
+    <h2 className={styles.header}>
       Random things that I like:
     </h2>
-    <div class={styles.links}>
+    <div className={styles.links}>
       <ExternalLink className={styles.link}
         link=""
         >

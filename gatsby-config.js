@@ -21,7 +21,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `assets`,
+        name: `source assets`,
+        path: `${__dirname}/src/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `static assets`,
         path: `${__dirname}/static/assets`,
       },
     },
@@ -58,7 +65,7 @@ module.exports = {
         name: `rick-segal-portfolio`,
         short_name: `starter`,
         start_url: `/`,
-        icon: `static/assets/seagull.png`, // This path is relative to the root of the site.
+        icon: `src/assets/seagull.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
