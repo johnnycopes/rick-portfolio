@@ -20,6 +20,10 @@
   justify-content: center;
 }
 
+.horizontallyCentered {
+  align-items: center;
+}
+
 @media screen and (min-width: 400px) {
   .content {
     width: 90%;

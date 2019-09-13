@@ -5,14 +5,15 @@ import cx from "classnames"
 import styles from "../styles/components/Layout.module.scss"
 import Header from "./Header"
 
-const Layout = ({ verticallyCentered, children }) => (
+const Layout = ({ children, verticallyCentered, horizontallyCentered }) => (
   <>
     <Header />
     <div className={styles.wrapper}>
       <div className={cx(
         styles.content,
-        { [styles.verticallyCentered]: verticallyCentered }
-      )}>
+        { [styles.verticallyCentered]: verticallyCentered },
+        { [styles.horizontallyCentered]: horizontallyCentered },
+        )}>
         {children}
       </div>
     </div>
@@ -20,8 +21,9 @@ const Layout = ({ verticallyCentered, children }) => (
 )
 
 Layout.propTypes = {
-  verticallyCentered: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  verticallyCentered: PropTypes.bool,
+  horizontallyCentered: PropTypes.bool,
 }
 
 export default Layout

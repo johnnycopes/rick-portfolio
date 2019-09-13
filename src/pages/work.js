@@ -22,7 +22,7 @@ const WorkPage = ({ data }) => (
 )
 
 export const query = graphql`
-  query {
+  query WorkQuery {
     allMarkdownRemark(
       sort: {fields: frontmatter___order},
       filter: {frontmatter: {templateKey: {eq: "project"}}}

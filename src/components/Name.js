@@ -8,4 +8,4 @@ const Name = () => (
   </span>
 )
 
-export default Name 
+export default Name

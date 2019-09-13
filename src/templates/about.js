@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import styles from "../styles/pages/about.module.scss"
+import styles from "../styles/templates/about.module.scss"
 import Layout from "../components/Layout"
 import Button from "../components/Button"
 import ExternalLink from "../components/ExternalLink";
@@ -45,7 +45,7 @@ const AboutTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query About($id: String!) {
+  query AboutQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         resume {

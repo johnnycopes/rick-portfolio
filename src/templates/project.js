@@ -40,7 +40,7 @@ const ProjectTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query Project($slug: String!) {
+  query ProjectQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
