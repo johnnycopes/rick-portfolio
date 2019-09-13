@@ -29,11 +29,11 @@ collections:
           - { label: "Vimeo URL", name: "url", widget: "string" }
   - label: "Pages"
     name: "pages"
+    delete: false
     files:
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
-        delete: false
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
           - { label: "Profile Image", name: "image", widget: "image" }
