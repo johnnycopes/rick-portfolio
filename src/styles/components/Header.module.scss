@@ -1,0 +1,74 @@
+@import "../styles.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $bg-color;
+  z-index: map-get($z-index, header);
+  height: map-get($app, header);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  padding: 0.7rem;
+  position: relative;
+}
+
+.divider {
+  margin-right: 1rem;
+}
+
+.misc {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0 !important;
+}
+
+
+.icon {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: relative;
+  top: 2px;
+}
+
+.name {
+  padding-left: 0 !important;
+}
+
+.bird {
+  width: 2rem;
+  position: relative;
+  top: 3px;
+}
+
+.active {
+  text-decoration: underline; 
+}
+
+
+@media screen and (min-width: 400px) {
+  .item {
+    padding: 1rem;
+  }
+
+  .icon {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+} 
