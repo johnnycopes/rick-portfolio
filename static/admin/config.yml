@@ -38,7 +38,25 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
           - { label: "Profile Image", name: "image", widget: "image" }
           - { label: "Résumé", name: "resume", widget: "file" }
-      # - file: "src/pages/misc/index.md"
-      #   label: "Misc"
-      #   name: "misc"
-      #   fields:
+      - file: "src/pages/misc/index.md"
+        label: "Misc"
+        name: "misc"
+        fields:
+          - label: "Websites"
+            name: "websites"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - label: "Songs"
+            name: "songs"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Artist", name: "artist", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - label: "Instagrams"
+            name: "instagrams"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }

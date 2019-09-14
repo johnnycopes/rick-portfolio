@@ -27,9 +27,10 @@ const ProjectTemplate = ({ data }) => {
         </div>
       </div>
       {project.frontmatter.videos.map((video, index) => (
-        <div className={styles.video}>
+        <div className={styles.video}
+          key={index}
+          >
           <Video
-            key={index}
             type={video.type}
             url={video.url}
           />

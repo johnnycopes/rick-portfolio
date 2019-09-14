@@ -9,10 +9,8 @@ const Video = ({ type, url }) => (
       <iframe
         src={url}
         title={url}
-        frameborder='0'
-        webkitAllowFullScreen
-        mozallowfullscreen
-        allowFullScreen>
+        allow="fullscreen"
+        >
       </iframe>
     </div>
     <p className={styles.type}>
