@@ -6,9 +6,9 @@ isActive: true
 order: 20
 thumbnail: /assets/rick.jpeg
 videos: []
-photos:
-  - photo: /assets/nfl.jpg
-  - photo: /assets/katie-button.jpg
-  - photo: /assets/steven-mancusi.jpg
+images:
+  - image: /assets/nfl.jpg
+  - image: /assets/katie-button.jpg
+  - image: /assets/steven-mancusi.jpg
 ---
 

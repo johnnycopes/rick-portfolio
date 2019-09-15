@@ -28,12 +28,10 @@ collections:
         fields: 
           - { label: "Type", name: "type", widget: "string", default: "TV" }
           - { label: "Vimeo URL", name: "url", widget: "string" }
-      - label: "Photos"
-        name: "photos"
+      - label: "Images"
+        name: "image"
         widget: "list"
-        default: []
-        fields:
-          - { label: "Photo", name: "photo", widget: "image" }
+        field: { label: "File", name: "image", widget: "image" }
   - label: "Pages"
     name: "pages"
     delete: false
@@ -66,5 +64,4 @@ collections:
           - label: "Instagrams"
             name: "instagrams"
             widget: "list"
-            fields:
-              - { label: "Handle", name: "handle", widget: "string" }
+            field: { label: "Handle", name: "handle", widget: "string" }

@@ -9,6 +9,7 @@ import Video from "../components/Video"
 
 const ProjectTemplate = ({ data }) => {
   const project = data.markdownRemark
+  // console.log(project.frontmatter.images) TODO: show slideshow based on presence of video/images (use if statements for safe null check)
   return (
     <Layout>
       <div className={styles.header}>
@@ -49,6 +50,15 @@ export const query = graphql`
         videos {
           type
           url
+        }
+        images {
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
