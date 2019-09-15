@@ -5,6 +5,8 @@ websites:
     url: 'http://wtfismikewearing.tumblr.com'
   - name: McSweeney's
     url: 'https://www.mcsweeneys.net'
+  - name: Best Made
+    url: 'https://www.bestmadeco.com'
 songs:
   - artist: Anderson Paak
     title: Am I Wrong
@@ -12,8 +14,12 @@ songs:
   - artist: Joey Bada$$
     title: Devastated
     url: 'https://www.youtube.com/watch?v=RLnA25dVzrQ&feature=youtu.be'
+  - artist: Young Thug
+    title: Constantly Hating
+    url: 'https://www.youtube.com/watch?v=Va9fNf4FZyM'
 instagrams:
   - handle: donaldtrumpdoingthings
   - handle: MiddleClassFancy
+  - handle: JakeLikesOnions
 ---
 
