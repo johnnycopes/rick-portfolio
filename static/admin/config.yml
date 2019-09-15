@@ -24,12 +24,14 @@ collections:
       - label: "Videos"
         name: "videos"
         widget: "list"
+        default: []
         fields: 
           - { label: "Type", name: "type", widget: "string", default: "TV" }
           - { label: "Vimeo URL", name: "url", widget: "string" }
       - label: "Photos"
         name: "photos"
         widget: "list"
+        default: []
         fields:
           - { label: "Photo", name: "photo", widget: "image" }
   - label: "Pages"
