@@ -27,6 +27,11 @@ collections:
         fields: 
           - { label: "Type", name: "type", widget: "string", default: "TV" }
           - { label: "Vimeo URL", name: "url", widget: "string" }
+      - label: "Photos"
+        name: "photos"
+        widget: "list"
+        fields:
+          - { label: "Photo", name: "photo", widget: "image" }
   - label: "Pages"
     name: "pages"
     delete: false
