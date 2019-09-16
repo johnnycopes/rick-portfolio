@@ -10,7 +10,10 @@ import ExternalLink from "../components/ExternalLink";
 const AboutTemplate = ({ data }) => {
   const about = data.markdownRemark.frontmatter
   return (
-    <Layout verticallyCentered={true}>
+    <Layout
+      verticallyCentered={true}
+      horizontallyCentered={true}
+      >
       <div className={styles.about}>
         <Img
           className={styles.pic}
