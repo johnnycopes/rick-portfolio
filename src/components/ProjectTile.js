@@ -5,28 +5,26 @@ import styles from "../styles/components/ProjectTile.module.scss"
 import InternalLink from "./InternalLink"
 import BackgroundImage from "gatsby-background-image"
 
-const ProjectTile = ({ link, title, headline, image }) => {
-  return (
-    <InternalLink link={link}>
-      <BackgroundImage
-        className={styles.tile}
-        fluid={image}
-        alt={title}
-        >
-        <div className={styles.container}>
-          <div className={styles.text}>
-            <div className={styles.headline}>
-              {headline}
-            </div>
-            <div className={styles.title}>
-              {title}
-            </div>
+const ProjectTile = ({ link, title, headline, image }) => (
+  <InternalLink link={link}>
+    <BackgroundImage
+      className={styles.tile}
+      fluid={image}
+      alt={title}
+      >
+      <div className={styles.container}>
+        <div className={styles.text}>
+          <div className={styles.headline}>
+            {headline}
           </div>
-        </div >
-      </BackgroundImage>
-    </InternalLink>
-  )
-}
+          <div className={styles.title}>
+            {title}
+          </div>
+        </div>
+      </div >
+    </BackgroundImage>
+  </InternalLink>
+)
 
 ProjectTile.propTypes = {
   link: PropTypes.string,

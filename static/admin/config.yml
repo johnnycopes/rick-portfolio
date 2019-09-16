@@ -30,7 +30,7 @@ collections:
       - label: "Images"
         name: "image"
         widget: "list"
-        field: { label: "Image", name: "image", widget: "image" }
+        field: { label: "Image file", name: "file", widget: "image" }
   - label: "Pages"
     name: "pages"
     delete: false

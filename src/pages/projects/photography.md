@@ -7,8 +7,8 @@ order: 20
 thumbnail: /assets/rick.jpeg
 videos: []
 images:
-  - image: /assets/nfl.jpg
-  - image: /assets/katie-button.jpg
-  - image: /assets/steven-mancusi.jpg
+  - file: /assets/nfl.jpg
+  - file: /assets/katie-button.jpg
+  - file: /assets/steven-mancusi.jpg
 ---
 

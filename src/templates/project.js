@@ -6,10 +6,12 @@ import Layout from "../components/Layout"
 import InternalLink from "../components/InternalLink"
 import Button from "../components/Button"
 import Video from "../components/Video"
+import Carousel from "../components/Carousel"
 
 const ProjectTemplate = ({ data }) => {
   const project = data.markdownRemark
-  // console.log(project.frontmatter.images) TODO: show slideshow based on presence of video/images (use if statements for safe null check)
+  const videos = project.frontmatter.videos || []
+  const images = project.frontmatter.images || []
   return (
     <Layout>
       <div className={styles.header}>
@@ -27,7 +29,7 @@ const ProjectTemplate = ({ data }) => {
           </p>
         </div>
       </div>
-      {project.frontmatter.videos.map((video, index) => (
+      {videos.map((video, index) => (
         <div className={styles.video}
           key={index}
           >
@@ -37,6 +39,9 @@ const ProjectTemplate = ({ data }) => {
           />
         </div>
       ))}
+      {images.length > 0 &&
+        <Carousel images={images} />
+      }
     </Layout>
   )
 }
@@ -52,7 +57,7 @@ export const query = graphql`
           url
         }
         images {
-          image {
+          file {
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid
