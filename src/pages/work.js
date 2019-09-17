@@ -4,20 +4,23 @@ import { graphql } from "gatsby"
 import styles from "../styles/pages/work.module.scss"
 import Layout from "../components/Layout"
 import ProjectTile from "../components/ProjectTile";
+import FadeWrapper from "../components/FadeWrapper";
 
-const WorkPage = ({ data }) => (
+const WorkPage = ({ data, transitionStatus }) => (
   <Layout>
-    <div className={styles.work}>
-      {data.allMarkdownRemark.edges.map(({ node }, index) => (
-        <ProjectTile
-          key={index}
-          link={node.fields.slug}
-          title={node.frontmatter.title}
-          headline={node.frontmatter.headline}
-          image={node.frontmatter.thumbnail.childImageSharp.fluid}
-        />
-      ))}
-    </div>
+    <FadeWrapper status={transitionStatus}>
+      <div className={styles.work}>
+        {data.allMarkdownRemark.edges.map(({ node }, index) => (
+          <ProjectTile
+            key={index}
+            link={node.fields.slug}
+            title={node.frontmatter.title}
+            headline={node.frontmatter.headline}
+            image={node.frontmatter.thumbnail.childImageSharp.fluid}
+          />
+        ))}
+      </div>
+    </FadeWrapper>
   </Layout>
 )
 

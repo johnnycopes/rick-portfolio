@@ -7,41 +7,44 @@ import InternalLink from "../components/InternalLink"
 import Button from "../components/Button"
 import Video from "../components/Video"
 import Carousel from "../components/Carousel"
+import FadeWrapper from "../components/FadeWrapper"
 
-const ProjectTemplate = ({ data }) => {
+const ProjectTemplate = ({ data, transitionStatus }) => {
   const project = data.markdownRemark
   const videos = project.frontmatter.videos || []
   const images = project.frontmatter.images || []
   return (
     <Layout>
-      <div className={styles.header}>
-        <InternalLink className={styles.back}
-          link="work"
-          >
-          <Button>back to work</Button>
-        </InternalLink>
-        <div className={styles.info}>
-          <p className={styles.headline}>
-            {project.frontmatter.headline}
-          </p>
-          <p className={styles.title}>
-            {project.frontmatter.title}
-          </p>
+      <FadeWrapper status={transitionStatus}>
+        <div className={styles.header}>
+          <InternalLink className={styles.back}
+            link="work"
+            >
+            <Button>back to work</Button>
+          </InternalLink>
+          <div className={styles.info}>
+            <p className={styles.headline}>
+              {project.frontmatter.headline}
+            </p>
+            <p className={styles.title}>
+              {project.frontmatter.title}
+            </p>
+          </div>
         </div>
-      </div>
-      {videos.map((video, index) => (
-        <div className={styles.video}
-          key={index}
-          >
-          <Video
-            type={video.type}
-            url={video.url}
-          />
-        </div>
-      ))}
-      {images.length > 0 &&
-        <Carousel images={images} />
-      }
+        {videos.map((video, index) => (
+          <div className={styles.video}
+            key={index}
+            >
+            <Video
+              type={video.type}
+              url={video.url}
+            />
+          </div>
+        ))}
+        {images.length > 0 &&
+          <Carousel images={images} />
+        }
+      </FadeWrapper>
     </Layout>
   )
 }
