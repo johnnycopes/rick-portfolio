@@ -9,58 +9,58 @@ media_folder: static/assets # Media files will be stored in the repo under `stat
 public_folder: assets # The src attribute for uploaded media will begin with `assets`
 
 collections:
-  - label: "Work"
-    name: "Work"
-    folder: "src/pages/work/"
+  - label: Work
+    name: Work
+    folder: src/pages/work/
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "project" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Company / Product", name: "headline", widget: "string" }
-      - { label: "Show in site", name: "isActive", widget: "boolean", default: true }
-      - { label: "Order", name: "order", widget: "number" }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
-      - label: "Videos"
-        name: "videos"
-        widget: "list"
+      - { label: Template Key, name: templateKey, widget: hidden, default: project }
+      - { label: Title, name: title, widget: string }
+      - { label: Company / Product, name: headline, widget: string }
+      - { label: Show in site, name: isActive, widget: boolean, default: true }
+      - { label: Order, name: order, widget: number }
+      - { label: Thumbnail, name: thumbnail, widget: image }
+      - label: Videos
+        name: videos
+        widget: list
         fields: 
-          - { label: "Type", name: "type", widget: "string", default: "TV" }
-          - { label: "Vimeo URL", name: "url", widget: "string" }
-      - label: "Images"
-        name: "image"
-        widget: "list"
-        field: { label: "Image file", name: "file", widget: "image" }
-  - label: "Pages"
-    name: "pages"
+          - { label: Type, name: type, widget: string, default: TV }
+          - { label: Vimeo URL, name: url, widget: string }
+      - label: Images
+        name: image
+        widget: list
+        field: { label: Image file, name: file, widget: image }
+  - label: Pages
+    name: pages
     delete: false
     files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: src/pages/about/index.md
+        label: About
+        name: about
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
-          - { label: "Profile Image", name: "image", widget: "image" }
-          - { label: "Résumé", name: "resume", widget: "file" }
-      - file: "src/pages/misc/index.md"
-        label: "Misc"
-        name: "misc"
+          - { label: Template Key, name: templateKey, widget: hidden, default: about }
+          - { label: Profile Image, name: image, widget: image }
+          - { label: Résumé, name: resume, widget: file }
+      - file: src/pages/misc/index.md
+        label: Misc
+        name: misc
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "misc" }
-          - label: "Websites"
-            name: "websites"
-            widget: "list"
+          - { label: Template Key, name: templateKey, widget: hidden, default: misc }
+          - label: Websites
+            name: websites
+            widget: list
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-          - label: "Songs"
-            name: "songs"
-            widget: "list"
+              - { label: Name, name: name, widget: string }
+              - { label: URL, name: url, widget: string }
+          - label: Songs
+            name: songs
+            widget: list
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Artist", name: "artist", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-          - label: "Instagrams"
-            name: "instagrams"
-            widget: "list"
-            field: { label: "Handle", name: "handle", widget: "string" }
+              - { label: Title, name: title, widget: string }
+              - { label: Artist, name: artist, widget: string }
+              - { label: URL, name: url, widget: string }
+          - label: Instagrams
+            name: instagrams
+            widget: list
+            field: { label: Handle, name: handle, widget: string }

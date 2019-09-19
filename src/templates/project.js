@@ -18,7 +18,7 @@ const ProjectTemplate = ({ data, transitionStatus }) => {
       <FadeWrapper status={transitionStatus}>
         <div className={styles.header}>
           <InternalLink className={styles.back}
-            link="work"
+            link="/work"
             >
             <Button>back to work</Button>
           </InternalLink>
