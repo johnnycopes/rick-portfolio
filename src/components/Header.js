@@ -44,16 +44,19 @@ const Header = () => (
       <nav className={styles.right}>
         <InternalLink className={styles.item}
           link="/work"
+          applyActiveClass={true}
           >
           work
         </InternalLink>
         <InternalLink className={styles.item}
           link="/about"
+          applyActiveClass={true}
           >
           about
         </InternalLink>
         <InternalLink className={cx(styles.item, styles.misc)}
           link="/misc"
+          applyActiveClass={true}
           >
           <Bird />
         </InternalLink>

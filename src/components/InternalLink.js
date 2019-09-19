@@ -5,9 +5,10 @@ import cx from "classnames"
 
 import styles from "../styles/components/Link.module.scss"
 
-const InternalLink = ({ link, className, children }) => (
+const InternalLink = ({ link, className, applyActiveClass, children }) => (
   <TransitionLink className={cx(styles.link, className)}
-    activeClassName={styles.active}
+    activeClassName={cx({ [styles.active]: applyActiveClass })}
+    partiallyActive={true}
     to={link}
     entry={{
       length: 0.1 // necessary to override the slow default provided by TransitionLink
@@ -20,6 +21,7 @@ const InternalLink = ({ link, className, children }) => (
 InternalLink.propTypes = {
   link: PropTypes.string.isRequired,
   className: PropTypes.string,
+  applyActiveClass: PropTypes.bool,
   children: PropTypes.node.isRequired,
 }
 
