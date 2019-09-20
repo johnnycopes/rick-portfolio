@@ -37,8 +37,8 @@ const AboutTemplate = ({ data, transitionStatus }) => {
               <ExternalLink link="https://www.instagram.com/riiyaack">
                 <Button>instagram</Button>
               </ExternalLink>
-              <ExternalLink link="https://www.wikipedia.org">
-                <Button>learn too much</Button>
+              <ExternalLink link={about.funButton.url}>
+                <Button>{about.funButton.text}</Button>
               </ExternalLink>
             </div>
             <ExternalLink link="mailto:risegal4@gmail.com">
@@ -64,6 +64,10 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+        funButton {
+          text
+          url
         }
       }
     }

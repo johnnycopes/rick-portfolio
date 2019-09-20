@@ -17,6 +17,7 @@
   font-size: inherit;
   font-weight: map-get($font-weight, normal);
   font-family: $font-stack;
+  text-transform: lowercase;
 
   &::before {
     content: "";
