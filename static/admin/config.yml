@@ -9,6 +9,15 @@ media_folder: static/assets # Media files will be stored in the repo under `stat
 public_folder: assets # The src attribute for uploaded media will begin with `assets`
 
 collections:
+  - label: Global
+    name: global
+    delete: false
+    files:
+      - label: Header
+        name: header
+        file: src/global/header.md
+        fields:
+          - { label: Twitter, name: twitter, widget: string }
   - label: Work
     name: Work
     folder: src/pages/work/
@@ -18,7 +27,7 @@ collections:
       - { label: Template Key, name: templateKey, widget: hidden, default: project }
       - { label: Title, name: title, widget: string }
       - { label: Company / Product, name: headline, widget: string }
-      - { label: Show in site, name: isActive, widget: boolean, default: true }
+      - { label: Show In Site, name: isActive, widget: boolean, default: true }
       - { label: Order, name: order, widget: number }
       - { label: Thumbnail, name: thumbnail, widget: image }
       - label: Videos
@@ -42,6 +51,12 @@ collections:
           - { label: Template Key, name: templateKey, widget: hidden, default: about }
           - { label: Profile Image, name: image, widget: image }
           - { label: Résumé, name: resume, widget: file }
+          - label: Fun Button
+            name: funButton
+            widget: object
+            fields:
+              - { label: Text, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
       - file: src/pages/misc/index.md
         label: Misc
         name: misc

@@ -1,6 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const { fmImagesToRelative } = require(`gatsby-remark-relative-images`);
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -20,7 +20,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages/"}}) {
         edges {
           node {
             id
