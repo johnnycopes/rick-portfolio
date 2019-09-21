@@ -26,6 +26,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             id
             frontmatter {
               templateKey
+              isActive
             }
             fields {
               slug
@@ -36,16 +37,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`src/templates/${node.frontmatter.templateKey}.js`),
-      context: {
-        // Data passed to context is available
-        // in page queries as GraphQL variables.
-        id: node.id,
-        slug: node.fields.slug,
-      },
-    })
+    console.log("base:", node)
+    if (node.frontmatter.isActive !== false) {
+      console.log("made it in:", node)
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`src/templates/${node.frontmatter.templateKey}.js`),
+        context: {
+          // Data passed to context is available
+          // in page queries as GraphQL variables.
+          id: node.id,
+          slug: node.fields.slug,
+        },
+      })
+    }
+    console.log("=================")
   })
 
   // Handle errors

@@ -28,7 +28,12 @@ export const query = graphql`
   query WorkQuery {
     allMarkdownRemark(
       sort: {fields: frontmatter___order},
-      filter: {frontmatter: {templateKey: {eq: "project"}}}
+      filter: {
+        frontmatter: {
+          templateKey: {eq: "project"},
+          isActive: {eq: true}
+        }
+      }
     ) {
       edges {
         node {
