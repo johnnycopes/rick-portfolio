@@ -14,7 +14,7 @@ import Bird from "./Bird";
 const Header = () => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
-      markdownRemark(id: { eq: "cab5a20e-ec2e-5044-8393-582410a4206f" }) {
+      markdownRemark(fileAbsolutePath: {regex: "/header/"}) {
         frontmatter {
           twitter
         }
