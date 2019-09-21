@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
+import cx from "classnames"
 
 import styles from "../styles/templates/misc.module.scss"
 import Layout from "../components/Layout"
@@ -12,6 +13,7 @@ const MiscTemplate = ({ data, transitionStatus }) => {
   const [ website, setWebsite ] = useState(websites[0])
   const [ song, setSong ] = useState(songs[0])
   const [ instagram, setInstagram ] = useState(instagrams[0])
+  const [ fade, setFade ] = useState(false)
   
   const setNewLinks = () => {
     const newWebsite = getNewItemFromArray(websites, website)
@@ -20,6 +22,7 @@ const MiscTemplate = ({ data, transitionStatus }) => {
     setWebsite(newWebsite)
     setSong(newSong)
     setInstagram(newInstagram)
+    setFade(true)
   }
 
   const getNewItemFromArray = (array, currentItem) => {
@@ -44,7 +47,12 @@ const MiscTemplate = ({ data, transitionStatus }) => {
         <h2 className={styles.header}>
           Random things that I like:
         </h2>
-        <div className={styles.links}>
+        <div className={cx(
+          styles.links,
+          { [styles.fade]: fade }
+          )}
+          onAnimationEnd={() => setFade(false)}
+          >
           <ExternalLink className={styles.link}
             link={website.url}
             >

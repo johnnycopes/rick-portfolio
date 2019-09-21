@@ -31,6 +31,15 @@
   }
 }
 
+.fade {
+  animation: fade-in-keyframes 175ms ease-in;
+}
+
+@keyframes fade-in-keyframes {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
 .button {
   cursor: pointer;
   border-radius: 5px;

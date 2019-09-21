@@ -37,9 +37,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    console.log("base:", node)
     if (node.frontmatter.isActive !== false) {
-      console.log("made it in:", node)
       createPage({
         path: node.fields.slug,
         component: path.resolve(`src/templates/${node.frontmatter.templateKey}.js`),
@@ -51,7 +49,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         },
       })
     }
-    console.log("=================")
   })
 
   // Handle errors
