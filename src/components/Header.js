@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { FaRegEnvelope, FaLinkedin, FaInstagram, FaTwitterSquare } from "react-icons/fa"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faLinkedin, faInstagram, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 import cx from "classnames"
 
 import styles from "../styles/components/Header.module.scss"
@@ -34,22 +36,22 @@ const Header = () => {
           <ExternalLink className={cx(styles.item, styles.icon)}
             link="mailto:risegal4@gmail.com"
             >
-            <FaRegEnvelope />
+            <FontAwesomeIcon icon={faEnvelope} />
           </ExternalLink>
           <ExternalLink className={cx(styles.item, styles.icon)}
             link="https://www.linkedin.com/in/rsegal"
             >
-            <FaLinkedin />
+            <FontAwesomeIcon icon={faLinkedin} />
           </ExternalLink>
           <ExternalLink className={cx(styles.item, styles.icon)}
             link="https://www.instagram.com/riiyaack/"
             >
-            <FaInstagram />
+            <FontAwesomeIcon icon={faInstagram} />
           </ExternalLink>
           <ExternalLink className={cx(styles.item, styles.icon)}
             link={data.markdownRemark.frontmatter.twitter}
             >
-            <FaTwitterSquare />
+            <FontAwesomeIcon icon={faTwitterSquare} />
           </ExternalLink>
         </nav>
         <nav className={styles.right}>
