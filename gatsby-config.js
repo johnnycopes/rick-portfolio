@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Rick Segal portfolio`,
+    title: `Rick Segal`,
     description: `A custom portfolio site built with Gatsby and Netlify CMS.`,
     author: `johnnycopes`,
   },
@@ -71,7 +71,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `rick-segal-portfolio`,
-        short_name: `starter`,
+        short_name: `rick-segal`,
         start_url: `/`,
         icon: `src/assets/seagull.png`, // This path is relative to the root of the site.
       },
@@ -80,7 +80,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`, // make sure this is the last line in the plugins array
   ],

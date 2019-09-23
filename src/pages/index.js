@@ -1,13 +1,18 @@
 import React from "react"
 
 import styles from "../styles/pages/index.module.scss"
+import Layout from "../components/Layout"
 import Name from "../components/Name"
 import Button from "../components/Button"
 import InternalLink from "../components/InternalLink"
 import Bird from "../components/Bird"
 
 const IndexPage = () => (
-  <div className={styles.home}>
+  <Layout
+    showHeader={false}
+    verticallyCentered={true}
+    horizontallyCentered={true}
+    >
     <h1 className={styles.name}>
       <Name />
     </h1>
@@ -34,7 +39,7 @@ const IndexPage = () => (
         </Button>
       </InternalLink>
     </div>
-  </div>
+  </Layout>
 )
 
 export default IndexPage
