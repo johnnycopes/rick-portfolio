@@ -5,6 +5,7 @@ import cx from "classnames"
 
 import styles from "../styles/templates/misc.module.scss"
 import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 import FadeWrapper from "../components/FadeWrapper"
 import ExternalLink from "../components/ExternalLink"
 
@@ -43,6 +44,7 @@ const MiscTemplate = ({ data, transitionStatus }) => {
       verticallyCentered={true}
       horizontallyCentered={true}
       >
+      <SEO title="misc" />
       <FadeWrapper status={transitionStatus}>
         <h2 className={styles.header}>
           Random things that I like:

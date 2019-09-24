@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import styles from "../styles/templates/about.module.scss"
 import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 import FadeWrapper from "../components/FadeWrapper"
 import Button from "../components/Button"
 import ExternalLink from "../components/ExternalLink";
@@ -15,6 +16,7 @@ const AboutTemplate = ({ data, transitionStatus }) => {
       verticallyCentered={true}
       horizontallyCentered={true}
       >
+      <SEO title="about" />
       <FadeWrapper status={transitionStatus}>
         <div className={styles.about}
           >

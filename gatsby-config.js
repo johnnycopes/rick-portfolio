@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Rick Segal`,
-    description: `A custom portfolio site built with Gatsby and Netlify CMS.`,
+    description: `Hey it's me — Rick.`,
     author: `johnnycopes`,
   },
   plugins: [

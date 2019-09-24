@@ -2,6 +2,7 @@ import React from "react"
 
 import styles from "../styles/pages/index.module.scss"
 import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 import Name from "../components/Name"
 import Button from "../components/Button"
 import InternalLink from "../components/InternalLink"
@@ -13,6 +14,7 @@ const IndexPage = () => (
     verticallyCentered={true}
     horizontallyCentered={true}
     >
+    <SEO />
     <h1 className={styles.name}>
       <Name />
     </h1>

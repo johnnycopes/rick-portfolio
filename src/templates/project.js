@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import styles from "../styles/templates/project.module.scss"
 import Layout from "../components/Layout"
+import SEO from "../components/Seo"
 import InternalLink from "../components/InternalLink"
 import Button from "../components/Button"
 import Video from "../components/Video"
@@ -15,6 +16,7 @@ const ProjectTemplate = ({ data, transitionStatus }) => {
   const images = project.frontmatter.images || []
   return (
     <Layout>
+      <SEO title={project.frontmatter.title} />
       <FadeWrapper status={transitionStatus}>
         <div className={styles.header}>
           <InternalLink className={styles.back}

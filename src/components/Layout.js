@@ -8,8 +8,7 @@ import styles from "../styles/components/Layout.module.scss"
 import Header from "./Header"
 
 const Layout = ({ children, showHeader, verticallyCentered, horizontallyCentered }) => {
-  const data = useStaticQuery(
-    graphql`
+  const data = useStaticQuery(graphql`
     query SiteMetadataQuery {
       site {
         siteMetadata {
