@@ -18,9 +18,10 @@ songs:
     title: Constantly Hating
     url: 'https://www.youtube.com/watch?v=Va9fNf4FZyM'
 instagrams:
-  - handle: donaldtrumpdoingthings
-  - handle: MiddleClassFancy
-  - handle: JakeLikesOnions
-  - handle: zacharykiernan
+  - donaldtrumpdoingthings
+  - MiddleClassFancy
+  - JakeLikesOnions
+  - zacharykiernan
+  - fuckadvertisements
 ---
 

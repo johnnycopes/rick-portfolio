@@ -66,9 +66,9 @@ const MiscTemplate = ({ data, transitionStatus }) => {
             Song that I like: <span className={styles.link__name}>{song.artist} — {song.title}</span>
           </ExternalLink>
           <ExternalLink className={styles.link}
-            link={`https://www.instagram.com/${instagram.handle}`}
+            link={`https://www.instagram.com/${instagram}`}
             >
-            Instagram that I like: <span className={styles.link__name}>@{instagram.handle}</span>
+            Instagram that I like: <span className={styles.link__name}>@{instagram}</span>
           </ExternalLink>
         </div>
         <button className={styles.button}
@@ -101,9 +101,7 @@ export const query = graphql`
           title
           url
         }
-        instagrams {
-          handle
-        }
+        instagrams
       }
     }
   }
