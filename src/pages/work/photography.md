@@ -8,5 +8,6 @@ thumbnail: /assets/rick.jpeg
 videos: []
 images:
   - /assets/katie-button.jpg
+  - /assets/nfl.jpg
 ---
 
