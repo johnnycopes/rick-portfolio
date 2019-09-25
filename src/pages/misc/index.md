@@ -22,5 +22,6 @@ instagrams:
   - handle: MiddleClassFancy
   - handle: JakeLikesOnions
   - zacharykiernan
+  - fuckadvertisements
 ---
 
