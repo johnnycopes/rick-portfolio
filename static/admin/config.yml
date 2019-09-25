@@ -56,8 +56,7 @@ collections:
           - label: Instagrams
             name: instagrams
             widget: list
-            fields: 
-              - { label: Handle, name: handle, widget: string }
+            field: { label: Handle, name: handle, widget: string }
   - label: Work
     name: Work
     folder: src/pages/work/
