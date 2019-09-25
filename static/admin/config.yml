@@ -79,5 +79,4 @@ collections:
       - label: Images
         name: images
         widget: list
-        fields: 
-          - { label: Image File, name: image, widget: image }
+        field: { label: Image File, name: image, widget: image }
