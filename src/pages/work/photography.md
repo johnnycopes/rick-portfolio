@@ -9,5 +9,6 @@ videos: []
 images:
   - /assets/katie-button.jpg
   - /assets/nfl.jpg
+  - /assets/rick.jpeg
 ---
 
