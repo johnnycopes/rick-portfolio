@@ -50,7 +50,7 @@ const Carousel = ({ images }) => {
         <Img
           className={styles.image}
           key={index}
-          fluid={image.file.childImageSharp.fluid}
+          fluid={image.childImageSharp.fluid}
         /> :
         null
       ))}

@@ -6,7 +6,7 @@ isActive: true
 order: 20
 thumbnail: /assets/rick.jpeg
 videos: []
-image:
+images:
   - /assets/katie-button.jpg
 ---
 

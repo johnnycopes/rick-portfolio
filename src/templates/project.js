@@ -62,11 +62,9 @@ export const query = graphql`
           url
         }
         images {
-          file {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
             }
           }
         }

@@ -22,7 +22,7 @@ const AboutTemplate = ({ data, transitionStatus }) => {
           >
           <Img
             className={styles.pic}
-            fluid={about.image.childImageSharp.fluid}
+            fluid={about.profileImage.childImageSharp.fluid}
             alt="Rick Segal"
           />
           <div className={styles.bio}>
@@ -60,7 +60,7 @@ export const query = graphql`
         resume {
           publicURL
         }
-        image {
+        profileImage {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

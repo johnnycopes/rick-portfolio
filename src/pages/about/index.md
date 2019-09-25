@@ -1,6 +1,6 @@
 ---
 templateKey: about
-image: /assets/rick.jpeg
+profileImage: /assets/rick.jpeg
 resume: /assets/rick-segal-resume.pdf
 funButton:
   text: learn too much
