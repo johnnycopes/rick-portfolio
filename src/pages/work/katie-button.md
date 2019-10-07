@@ -1,9 +1,9 @@
 ---
 templateKey: project
 title: Katie Button
-headline: Microsoft Surface Pro
+headline: Windows 10
 isActive: true
-order: 6
+order: 1600
 thumbnail: /assets/katie-button.jpg
 videos:
   - type: TV

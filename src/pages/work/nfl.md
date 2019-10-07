@@ -1,9 +1,9 @@
 ---
 templateKey: project
 title: NFL
-headline: Surface Book
+headline: Surface Pro
 isActive: true
-order: 10
+order: 100
 thumbnail: /assets/nfl.jpg
 videos:
   - type: TV
