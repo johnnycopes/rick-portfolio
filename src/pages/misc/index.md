@@ -3,7 +3,7 @@ templateKey: misc
 websites:
   - name: WTF is Mike Wearing
     url: 'http://wtfismikewearing.tumblr.com'
-  - name: MccSweeney'
+  - name: McSweeney's
     url: 'https://www.mcsweeneys.net'
   - name: Poolside FM
     url: 'http://poolside.fm'
