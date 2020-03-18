@@ -1,7 +1,7 @@
 ---
 templateKey: project
-title: Photography
-headline: ' '
+title: ' '
+headline: Photography
 isActive: true
 order: 1700
 thumbnail: /assets/field.jpg
