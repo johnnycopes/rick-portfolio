@@ -4,7 +4,7 @@ title: Real People
 headline: Microsoft
 isActive: true
 order: 700
-thumbnail: /assets/bug-chicks.jpg
+thumbnail: assets/simon-jacomet.jpg
 videos:
   - type: '"Steven Mancusi"'
     url: 'https://player.vimeo.com/video/199375987'
@@ -22,6 +22,8 @@ videos:
     url: 'https://player.vimeo.com/video/199376398'
   - type: '"Katie Button"'
     url: 'https://player.vimeo.com/video/250293749'
-  - type: Simon Jacomet
+  - type: '"Simon Jacomet"'
     url: 'https://player.vimeo.com/video/199379408'
+  - type: '"Yasmin Belo-Osagie"'
+    url: 'https://player.vimeo.com/video/201602899'
 ---
