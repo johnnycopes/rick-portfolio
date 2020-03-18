@@ -2,7 +2,7 @@
 templateKey: project
 title: Times Square Takeover
 headline: Surface Book
-isActive: true
+isActive: false
 order: 1300
 thumbnail: /assets/times-square-takeover.jpg
 videos:
