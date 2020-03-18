@@ -6,18 +6,20 @@ isActive: true
 order: 700
 thumbnail: /assets/bug-chicks.jpg
 videos:
-  - type: Steven Mancusi
+  - type: '"Steven Mancusi"'
     url: 'https://player.vimeo.com/video/199375987'
-  - type: Bug Chicks
+  - type: '"Bug Chicks"'
     url: 'https://player.vimeo.com/video/199376306'
-  - type: Tony Jackson
+  - type: '"Tony Jackson"'
     url: 'https://player.vimeo.com/video/250293659'
-  - type: Victoria Alonso
+  - type: '"Victoria Alonso"'
     url: 'https://player.vimeo.com/video/199724673'
-  - type: Hulford Quads
+  - type: '"Hulford Quads"'
     url: 'https://player.vimeo.com/video/199724222'
-  - type: Ariela Suster
+  - type: '"Ariela Suster"'
     url: 'https://player.vimeo.com/video/199724970'
-  - type: Tim Flack
+  - type: '"Tim Flack"'
     url: 'https://player.vimeo.com/video/199376398'
+  - type: '"Katie Button"'
+    url: 'https://player.vimeo.com/video/250293749'
 ---
