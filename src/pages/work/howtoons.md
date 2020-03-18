@@ -6,7 +6,6 @@ isActive: true
 order: 200
 thumbnail: /assets/howtoons.jpg
 videos:
-  - type: TV
+  - type: '"Howtoons"'
     url: 'https://player.vimeo.com/video/274526298'
 ---
-
