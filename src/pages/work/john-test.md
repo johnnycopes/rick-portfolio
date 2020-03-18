@@ -3,7 +3,7 @@ templateKey: project
 title: John
 headline: Got2B
 isActive: true
-order: 700
+order: 150
 thumbnail: /assets/bug-chicks.jpg
 videos:
   - type: TV
