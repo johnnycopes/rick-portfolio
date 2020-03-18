@@ -2,7 +2,7 @@
 templateKey: project
 title: Tim Flach
 headline: Surface Book
-isActive: true
+isActive: false
 order: 900
 thumbnail: /assets/tim-flach.jpg
 videos:

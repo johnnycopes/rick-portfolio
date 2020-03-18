@@ -2,7 +2,7 @@
 templateKey: project
 title: Simon Jacomet
 headline: Intel
-isActive: true
+isActive: false
 order: 1400
 thumbnail: /assets/simon-jacomet.jpg
 videos:

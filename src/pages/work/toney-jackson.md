@@ -2,7 +2,7 @@
 templateKey: project
 title: Toney Jackson
 headline: Windows 10
-isActive: true
+isActive: false
 order: 400
 thumbnail: /assets/toney-jackson.jpg
 videos:

@@ -2,7 +2,7 @@
 templateKey: project
 title: Katie Button
 headline: Windows 10
-isActive: true
+isActive: false
 order: 1600
 thumbnail: /assets/katie-button.jpg
 videos:
