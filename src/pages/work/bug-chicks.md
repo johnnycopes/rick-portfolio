@@ -16,8 +16,6 @@ videos:
     url: 'https://player.vimeo.com/video/199724673'
   - type: '"Hulford Quads"'
     url: 'https://player.vimeo.com/video/199724222'
-  - type: '"Ariela Suster"'
-    url: 'https://player.vimeo.com/video/199724970'
   - type: '"Tim Flack"'
     url: 'https://player.vimeo.com/video/199376398'
   - type: '"Katie Button"'
