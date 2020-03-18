@@ -4,11 +4,10 @@ title: Spread Harmony
 headline: Microsoft
 isActive: true
 order: 500
-thumbnail: /assets/spread-harmony.jpg
+thumbnail: assets/spreadharmony.jpg
 videos:
-  - type: TV
+  - type: '"Spread Harmony"'
     url: 'https://player.vimeo.com/video/201600392'
   - type: Case Study
     url: 'https://player.vimeo.com/video/199375695'
 ---
-
