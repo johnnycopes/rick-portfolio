@@ -22,4 +22,6 @@ videos:
     url: 'https://player.vimeo.com/video/199376398'
   - type: '"Katie Button"'
     url: 'https://player.vimeo.com/video/250293749'
+  - type: Simon Jacomet
+    url: 'https://player.vimeo.com/video/199379408'
 ---
