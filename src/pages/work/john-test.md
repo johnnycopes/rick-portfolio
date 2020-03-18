@@ -1,7 +1,7 @@
 ---
 templateKey: project
 title: John
-headline: John
+headline: Got2B
 isActive: true
 order: 700
 thumbnail: /assets/bug-chicks.jpg
