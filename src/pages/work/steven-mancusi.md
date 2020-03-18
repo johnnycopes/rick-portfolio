@@ -2,7 +2,7 @@
 templateKey: project
 title: Steven Mancusi
 headline: Surface Pro 4
-isActive: true
+isActive: false
 order: 1200
 thumbnail: /assets/steven-mancusi.jpg
 videos:
