@@ -1,7 +1,7 @@
 ---
 templateKey: project
 title: Modern Mainstream
-headline: Windows
+headline: Windows 10
 isActive: true
 order: 300
 thumbnail: /assets/modern-mainstream.jpg
