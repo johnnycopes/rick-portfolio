@@ -2,7 +2,7 @@
 templateKey: project
 title: Tuna
 headline: Johnny Cookah
-isActive: true
+isActive: false
 order: 1
 thumbnail: assets/patrick_star.png
 videos:
