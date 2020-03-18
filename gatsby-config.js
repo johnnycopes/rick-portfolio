@@ -76,6 +76,13 @@ module.exports = {
         icon: `src/assets/seagull.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        // Path to your Netlify CMS config file
+        cmsConfig: `/static/admin/config.yml`
+      }
+    }
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
