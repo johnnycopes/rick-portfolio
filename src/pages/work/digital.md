@@ -2,7 +2,7 @@
 templateKey: project
 title: Digital
 headline: Microsoft
-isActive: true
+isActive: false
 order: 1100
 thumbnail: /assets/digital.jpg
 videos:
