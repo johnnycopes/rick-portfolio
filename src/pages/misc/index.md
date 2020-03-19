@@ -134,4 +134,20 @@ instagrams:
   - gucci
   - jvn
   - zacharykiernan
+  - chrissimpsonsartist
+  - middleclassfancy
+  - bandit_studio
+  - ordinarypeoplememes
+  - brunolevytattoo
+  - dima_to_go
+  - joe_at_home
+  - dukerileystudio
+  - katya_krasnova
+  - slowerblack
+  - nycurbanism
+  - goodboybobcoffee
+  - lupacotta
+  - grapejuiceboys
+  - rucamyhyna
+  - topherbrophy
 ---
