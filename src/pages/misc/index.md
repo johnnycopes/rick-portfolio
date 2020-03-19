@@ -11,8 +11,6 @@ websites:
     url: 'http://www.lememe.com'
   - name: Fake Updates
     url: 'http://fakeupdate.net'
-  - name: Literally Unbelievable
-    url: 'http://literallyunbelievable.org'
   - name: Pictures Of Walls
     url: 'http://www.picturesofwalls.com'
   - name: Don't Even Reply
@@ -21,8 +19,6 @@ websites:
     url: 'http://sendamessage.to'
   - name: The Colour Clock
     url: 'http://thecolourclock.co.uk'
-  - name: Fancy
-    url: 'https://fancy.com'
   - name: Bacon Ipsum
     url: 'https://baconipsum.com'
   - name: NYT Basic Knife Skills
@@ -57,6 +53,24 @@ websites:
     url: 'http://whatthefuckshouldimakefordinner.com/'
   - name: Who Sampled
     url: 'https://www.whosampled.com/'
+  - name: good boy bob
+    url: 'https://goodboybob.com/'
+  - name: Miss Aada
+    url: 'https://www.missadanyc.com/'
+  - name: Coming Soon NY
+    url: 'https://comingsoonnewyork.com/'
+  - name: Only NY
+    url: 'https://onlyny.com/'
+  - name: Ciaooo!
+    url: 'https://ciaooomag.com/'
+  - name: Default Filename TV
+    url: 'http://defaultfile.name/'
+  - name: Design Milk
+    url: 'https://design-milk.com/'
+  - name: Off Liberty
+    url: 'http://offliberty.com/'
+  - name: Angry Post Vendor
+    url: 'https://twitter.com/AngryPostVendor?s=20'
 songs:
   - artist: Anderson Paak
     title: Am I Wrong
@@ -120,4 +134,20 @@ instagrams:
   - gucci
   - jvn
   - zacharykiernan
+  - chrissimpsonsartist
+  - middleclassfancy
+  - bandit_studio
+  - ordinarypeoplememes
+  - brunolevytattoo
+  - dima_to_go
+  - joe_at_home
+  - dukerileystudio
+  - katya_krasnova
+  - slowerblack
+  - nycurbanism
+  - goodboybobcoffee
+  - lupacotta
+  - grapejuiceboys
+  - rucamyhyna
+  - topherbrophy
 ---
