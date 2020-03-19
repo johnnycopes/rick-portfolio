@@ -69,6 +69,8 @@ websites:
     url: 'https://design-milk.com/'
   - name: Off Liberty
     url: 'http://offliberty.com/'
+  - name: Angry Post Vendor
+    url: 'https://twitter.com/AngryPostVendor?s=20'
 songs:
   - artist: Anderson Paak
     title: Am I Wrong
