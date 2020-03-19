@@ -11,8 +11,6 @@ websites:
     url: 'http://www.lememe.com'
   - name: Fake Updates
     url: 'http://fakeupdate.net'
-  - name: Literally Unbelievable
-    url: 'http://literallyunbelievable.org'
   - name: Pictures Of Walls
     url: 'http://www.picturesofwalls.com'
   - name: Don't Even Reply
@@ -21,8 +19,6 @@ websites:
     url: 'http://sendamessage.to'
   - name: The Colour Clock
     url: 'http://thecolourclock.co.uk'
-  - name: Fancy
-    url: 'https://fancy.com'
   - name: Bacon Ipsum
     url: 'https://baconipsum.com'
   - name: NYT Basic Knife Skills
