@@ -32,7 +32,7 @@ websites:
   - name: Ling's Cars
     url: 'https://www.lingscars.com'
   - name: Space Jam
-    url: 'https://www.warnerbros.com/archive/spacejam/movie/jam.html'
+    url: 'https://www.spacejam.com/'
   - name: La Colombe
     url: 'https://www.lacolombe.com/'
   - name: Karasu
@@ -121,4 +121,3 @@ instagrams:
   - jvn
   - zacharykiernan
 ---
-
