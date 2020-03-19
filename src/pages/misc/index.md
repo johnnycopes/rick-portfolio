@@ -53,6 +53,22 @@ websites:
     url: 'http://whatthefuckshouldimakefordinner.com/'
   - name: Who Sampled
     url: 'https://www.whosampled.com/'
+  - name: good boy bob
+    url: 'https://goodboybob.com/'
+  - name: Miss Aada
+    url: 'https://www.missadanyc.com/'
+  - name: Coming Soon NY
+    url: 'https://comingsoonnewyork.com/'
+  - name: Only NY
+    url: 'https://onlyny.com/'
+  - name: Ciaooo!
+    url: 'https://ciaooomag.com/'
+  - name: Default Filename TV
+    url: 'http://defaultfile.name/'
+  - name: Design Milk
+    url: 'https://design-milk.com/'
+  - name: Off Liberty
+    url: 'http://offliberty.com/'
 songs:
   - artist: Anderson Paak
     title: Am I Wrong
