@@ -3,7 +3,7 @@ templateKey: project
 title: Timeless Reflections
 headline: McCann Erickson
 isActive: true
-order: 1800
+order: 700
 thumbnail: /assets/timeless-reflections.jpg
 videos:
   - type: TV
