@@ -3,7 +3,7 @@ templateKey: project
 title: Modern Mainstream
 headline: Windows 10
 isActive: true
-order: 500
+order: 600
 thumbnail: /assets/modern-mainstream.jpg
 videos:
   - type: '"Modern Mainstream"'
