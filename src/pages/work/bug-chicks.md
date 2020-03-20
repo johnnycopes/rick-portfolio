@@ -3,7 +3,7 @@ templateKey: project
 title: Real People
 headline: Microsoft
 isActive: true
-order: 700
+order: 400
 thumbnail: assets/simon-jacomet.jpg
 videos:
   - type: '"Steven Mancusi"'
