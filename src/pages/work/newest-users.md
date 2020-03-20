@@ -3,7 +3,7 @@ templateKey: project
 title: Newest Users
 headline: Windows 10
 isActive: true
-order: 600
+order: 325
 thumbnail: /assets/newest-users.jpg
 videos:
   - type: '"Newest Users" (TV)'
