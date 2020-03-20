@@ -2,7 +2,7 @@
 templateKey: project
 title: LovePop + Detroit Wallpaper
 headline: Office 365
-isActive: true
+isActive: false
 order: 1500
 thumbnail: /assets/love-pop.jpg
 videos:
