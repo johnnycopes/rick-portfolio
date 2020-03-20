@@ -3,7 +3,7 @@ templateKey: project
 title: Spread Harmony
 headline: Microsoft
 isActive: true
-order: 500
+order: 275
 thumbnail: assets/spreadharmony.jpg
 videos:
   - type: '"Spread Harmony"'
