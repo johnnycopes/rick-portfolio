@@ -3,7 +3,7 @@ templateKey: project
 title: Miscellaneous Digital
 headline: Microsoft
 isActive: true
-order: 1100
+order: 800
 thumbnail: /assets/digital.jpg
 videos:
   - type: Digital Sizzle Video
