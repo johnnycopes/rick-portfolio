@@ -69,6 +69,22 @@ $z-index: (
 
 
 // ===================
+// MIXINS
+// ===================
+
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $light-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $action-color;
+  }
+}
+
+
+// ===================
 // RESET
 // ===================
 
@@ -141,6 +157,7 @@ body {
   font-weight: map-get($font-weight, normal);
   font-family: $font-stack;
   min-height: 100vh;
+  @include custom-scrollbar();
 }
 
 h1, h2, h3, h4 {
