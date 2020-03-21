@@ -1,7 +1,8 @@
 @import "../styles.scss";
 
 .tile {
-  height: 210px;
+  min-height: 200px;
+  height: 40vw;
   transition: $medium-transition;
   position: relative;
 }
@@ -45,6 +46,7 @@
 
 
 @media screen and (min-width: 1050px) {
+
   .text {
     opacity: 0;
     transform: translateY(-10px);
@@ -58,8 +60,6 @@
 
   .tile {
     &:hover {
-      transform: $scale;
-
       .container::after {
         opacity: 1;
       }
