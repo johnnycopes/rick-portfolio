@@ -1,0 +1,11 @@
+@import "../styles.scss";
+
+.wrapper {
+  height: calc(100vh - #{map-get($app, header)});
+  width: 100vw;
+  position: relative;
+}
+
+.resume {
+  height: 100%;
+}

@@ -28,13 +28,17 @@ collections:
         fields:
           - { label: Template Key, name: templateKey, widget: hidden, default: about }
           - { label: Profile Image, name: profileImage, widget: image }
-          - { label: Résumé, name: resume, widget: file }
           - label: Fun Button
             name: funButton
             widget: object
             fields:
               - { label: Text, name: text, widget: string }
               - { label: URL, name: url, widget: string }
+      - file: src/pages/resume/index.md
+        label: Resume
+        name: resume
+        fields:
+          - { label: File, name: file, widget: file }
       - file: src/pages/misc/index.md
         label: Misc
         name: misc

@@ -6,6 +6,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `@mkitio/gatsby-theme-password-protect`,
+      options: {
+        password: `password`, // TODO: set up .env environment variable
+        pagePaths: [`/resume`]
+      }
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [

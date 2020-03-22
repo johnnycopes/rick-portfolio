@@ -8,6 +8,7 @@ import SEO from "../components/Seo"
 import FadeWrapper from "../components/FadeWrapper"
 import Button from "../components/Button"
 import ExternalLink from "../components/ExternalLink";
+import InternalLink from "../components/InternalLink";
 
 const AboutTemplate = ({ data, transitionStatus }) => {
   const about = data.markdownRemark.frontmatter
@@ -30,9 +31,12 @@ const AboutTemplate = ({ data, transitionStatus }) => {
               Hey, it's me — Rick.
             </h2>
             <div className={styles.buttons}>
-              <ExternalLink link={about.resume.publicURL}>
+              {/* <ExternalLink link={about.resume.publicURL}>
                 <Button>résumé</Button>
-              </ExternalLink>
+              </ExternalLink> */}
+              <InternalLink link="/resume">
+                <Button>résumé</Button>
+              </InternalLink>
               <ExternalLink link="https://www.linkedin.com/in/rsegal">
                 <Button>linkedin</Button>
               </ExternalLink>
