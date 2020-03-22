@@ -45,6 +45,11 @@
 }
 
 @media screen and (min-width: 500px) {
+
+  .text {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
   
   .container {
     &::after {
@@ -64,14 +69,14 @@
       }
     }
   }
+  
 }
 
 
 @media screen and (min-width: 1050px) {
 
   .text {
-    opacity: 0;
-    transform: translateY(-10px);
     font-size: 30px;
   }
+
 }
