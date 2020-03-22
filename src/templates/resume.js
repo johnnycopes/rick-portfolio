@@ -1,13 +1,31 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLock } from '@fortawesome/free-solid-svg-icons'
 
 import styles from "../styles/templates/resume.module.scss"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import FadeWrapper from "../components/FadeWrapper"
+import Button from "../components/Button"
 
 const ResumeTemplate = ({ data, transitionStatus }) => {
   const resume = data.markdownRemark.frontmatter.resume.publicURL
+  const correctPassword = "password";
+  const [ showResume, setShowResume ] = useState(false);
+  const [ password, setPassword ] = useState("")
+
+  const handleChange = (event) => {
+    setPassword(event.target.value)
+  }
+
+  const submit = (event) => {
+    event.preventDefault();
+    if (password === correctPassword) {
+      setShowResume(true)
+    }
+  }
+
   return (
     <Layout
       verticallyCentered={true}
@@ -16,11 +34,32 @@ const ResumeTemplate = ({ data, transitionStatus }) => {
       <SEO title="resume" />
       <FadeWrapper status={transitionStatus}>
         <div className={styles.wrapper}>
-          <iframe className={styles.resume}
-            title="RickSegalResume"
-            src={resume}
+          {
+            showResume ?
+            <iframe className={styles.resume}
+              title="RickSegalResume"
+              src={resume}
             >
-          </iframe>
+            </iframe> :
+            <form className={styles.form}
+              onSubmit={submit}
+            >
+              <FontAwesomeIcon className={styles.icon}
+                icon={faLock}
+              />
+              <div className={styles.inputField}>
+                <input className={styles.input}
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={handleChange}
+                />
+                <Button>
+                  submit
+                </Button>
+              </div>
+            </form>
+          }
         </div>
       </FadeWrapper>
     </Layout>
