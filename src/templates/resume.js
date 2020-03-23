@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
@@ -12,9 +12,15 @@ import Button from "../components/Button"
 const ResumeTemplate = ({ data, transitionStatus }) => {
   const resume = data.markdownRemark.frontmatter.resume.publicURL
   const correctPassword = process.env.GATSBY_RESUME_PASSWORD
-  const [ showResume, setShowResume ] = useState(typeof window !== undefined ? localStorage.getItem("rickSegal:showResume") || false : false);
+  const [ showResume, setShowResume ] = useState(false);
   const [ password, setPassword ] = useState("")
   const [ error, setError ] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      setShowResume(localStorage.getItem("rickSegal:showResume") || false)
+    }
+  }, [])
 
   const handleChange = (event) => {
     setPassword(event.target.value)
