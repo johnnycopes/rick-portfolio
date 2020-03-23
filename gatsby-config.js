@@ -89,6 +89,12 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-netlify`, // make sure this is the last line in the plugins array
+    {
+      resolve: `gatsby-plugin-netlify`,
+      headers: {
+        '/*': ['X-Frame-Options: ALLOW-FROM https://www.rick-segal.com/'],
+      },
+      mergeSecurityHeaders: false,
+    }
   ],
 }
