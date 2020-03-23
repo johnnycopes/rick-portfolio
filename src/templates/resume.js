@@ -12,7 +12,7 @@ import Button from "../components/Button"
 const ResumeTemplate = ({ data, transitionStatus }) => {
   const resume = data.markdownRemark.frontmatter.resume.publicURL
   const correctPassword = process.env.GATSBY_RESUME_PASSWORD
-  const [ showResume, setShowResume ] = useState(localStorage.getItem("rickSegal:showResume") || false);
+  const [ showResume, setShowResume ] = useState(localStorage && localStorage.getItem("rickSegal:showResume") || false);
   const [ password, setPassword ] = useState("")
   const [ error, setError ] = useState(false)
 
@@ -25,7 +25,7 @@ const ResumeTemplate = ({ data, transitionStatus }) => {
     if (password === correctPassword) {
       setError(false)
       setShowResume(true)
-      localStorage.setItem("rickSegal:showResume", true)
+      localStorage && localStorage.setItem("rickSegal:showResume", true)
     } else {
       setError(true)
       setPassword("")
