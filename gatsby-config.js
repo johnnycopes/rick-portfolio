@@ -92,7 +92,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify`,
       headers: {
-        '/*': ['X-Frame-Options: ALLOW-FROM https://www.rick-segal.com/'],
+        '/*': ['X-Frame-Options: SAMEORIGIN'],
       },
       mergeSecurityHeaders: false,
     }
