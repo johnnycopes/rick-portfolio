@@ -91,10 +91,12 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-netlify`,
-      headers: {
-        '/*': ['X-Frame-Options: SAMEORIGIN'],
+      options: {
+        headers: {
+          '/*': ['X-Frame-Options: SAMEORIGIN'],
+        },
+        mergeSecurityHeaders: false,
       },
-      mergeSecurityHeaders: false,
     }
   ],
 }
