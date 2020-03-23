@@ -31,9 +31,6 @@ const AboutTemplate = ({ data, transitionStatus }) => {
               Hey, it's me — Rick.
             </h2>
             <div className={styles.buttons}>
-              {/* <ExternalLink link={about.resume.publicURL}>
-                <Button>résumé</Button>
-              </ExternalLink> */}
               <InternalLink link="/resume">
                 <Button>résumé</Button>
               </InternalLink>
