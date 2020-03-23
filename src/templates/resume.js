@@ -11,9 +11,10 @@ import Button from "../components/Button"
 
 const ResumeTemplate = ({ data, transitionStatus }) => {
   const resume = data.markdownRemark.frontmatter.resume.publicURL
-  const correctPassword = "password";
-  const [ showResume, setShowResume ] = useState(false);
+  const correctPassword = process.env.GATSBY_RESUME_PASSWORD
+  const [ showResume, setShowResume ] = useState(localStorage.getItem("rickSegal:showResume") || false);
   const [ password, setPassword ] = useState("")
+  const [ error, setError ] = useState(false)
 
   const handleChange = (event) => {
     setPassword(event.target.value)
@@ -22,7 +23,12 @@ const ResumeTemplate = ({ data, transitionStatus }) => {
   const submit = (event) => {
     event.preventDefault();
     if (password === correctPassword) {
+      setError(false)
       setShowResume(true)
+      localStorage.setItem("rickSegal:showResume", true)
+    } else {
+      setError(true)
+      setPassword("")
     }
   }
 
@@ -58,6 +64,7 @@ const ResumeTemplate = ({ data, transitionStatus }) => {
                   submit
                 </Button>
               </div>
+              {error && <p className={styles.error}>Incorrect password</p>}
             </form>
           }
         </div>
