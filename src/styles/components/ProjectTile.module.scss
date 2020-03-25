@@ -1,8 +1,7 @@
 @import "../styles.scss";
 
 .tile {
-  min-height: 200px;
-  height: 30vw;
+  height: 300px;
   transition: $medium-transition;
   position: relative;
 }
@@ -70,13 +69,4 @@
     }
   }
   
-}
-
-
-@media screen and (min-width: 1050px) {
-
-  .text {
-    font-size: 30px;
-  }
-
 }
