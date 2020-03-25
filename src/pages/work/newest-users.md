@@ -6,7 +6,7 @@ isActive: true
 order: 325
 thumbnail: assets/newestusers_x.jpg
 videos:
-  - type: '"Newest Users" (TV)'
+  - type: '"Newest Users"'
     url: 'https://player.vimeo.com/video/199377033'
   - type: '"Newest Users" (OLV)'
     url: 'https://player.vimeo.com/video/199376994'
