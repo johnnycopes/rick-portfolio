@@ -26,5 +26,4 @@ images:
   - /assets/millenial-bridge.jpg
   - /assets/Orono-at-night.jpg
   - /assets/Paris-2010.jpg
-  - /assets/Worcester-MA-200.jpg
 ---
