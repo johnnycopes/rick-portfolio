@@ -46,11 +46,14 @@ const Carousel = ({ images }) => {
         </g>
       </svg>
       {images.map((image, index) => (
-        index === currentImageIndex ?
+        image && index === currentImageIndex ?
         <Img
           className={styles.image}
           key={index}
           fluid={image.childImageSharp.fluid}
+          imgStyle={{
+            objectFit: "contain"
+          }}
         /> :
         null
       ))}

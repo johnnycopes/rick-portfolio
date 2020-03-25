@@ -6,6 +6,7 @@
   grid-template-rows: 1fr 100px;
   justify-content: center;
   align-items: center;
+  margin-bottom: map-get($app, gap);
 
   ::selection {
     background: transparent;
@@ -14,7 +15,7 @@
 
 .image {
   grid-row: 1;
-  max-height: 500px;
+  max-height: 100%;
 }
 
 .arrow {
@@ -44,7 +45,7 @@
   .carousel {
     display: grid;
     grid-template-columns: 100px 1fr 100px;
-    grid-template-rows: 500px;
+    grid-template-rows: 800px;
 
     ::selection {
       background: transparent;
