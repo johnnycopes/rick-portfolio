@@ -4,7 +4,7 @@ title: Miscellaneous Digital
 headline: Microsoft
 isActive: true
 order: 800
-thumbnail: /assets/digital.jpg
+thumbnail: assets/digitalsizzle_x.jpg
 videos:
   - type: Digital Sizzle Video
     url: 'https://player.vimeo.com/video/199892901'
