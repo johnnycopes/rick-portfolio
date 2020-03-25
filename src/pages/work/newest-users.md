@@ -4,7 +4,7 @@ title: Newest Users
 headline: Windows 10
 isActive: true
 order: 325
-thumbnail: /assets/newest-users.jpg
+thumbnail: assets/newestusers_x.jpg
 videos:
   - type: '"Newest Users" (TV)'
     url: 'https://player.vimeo.com/video/199377033'
