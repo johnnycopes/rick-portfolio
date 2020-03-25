@@ -4,7 +4,7 @@ title: Modern Mainstream
 headline: Windows 10
 isActive: true
 order: 600
-thumbnail: /assets/modern-mainstream.jpg
+thumbnail: assets/modernmainstream_x.jpg
 videos:
   - type: '"Modern Mainstream"'
     url: 'https://player.vimeo.com/video/309492691'
