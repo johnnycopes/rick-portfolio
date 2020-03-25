@@ -7,16 +7,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: $bg-color;
-  z-index: map-get($z-index, header);
   height: map-get($app, header);
-  width: 100%;
+  z-index: map-get($z-index, header);
+  background: $bg-color;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  margin: 0 map-get($app, gap);
+  margin: 0 auto;
+  max-width: map-get($app, max-width);
   width: 100%;
 }
 
