@@ -1,6 +1,6 @@
 ---
 templateKey: project
-title: Coming Soon
+title: WIP
 headline: Nissan
 isActive: true
 order: 250
