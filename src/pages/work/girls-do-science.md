@@ -6,7 +6,7 @@ isActive: true
 order: 300
 thumbnail: assets/girlsdoscience_x.jpg
 videos:
-  - type: Longform Video
+  - type: '"Girls Do Science"'
     url: 'https://player.vimeo.com/video/153027090'
   - type: Case Study
     url: 'https://player.vimeo.com/video/153027091'
