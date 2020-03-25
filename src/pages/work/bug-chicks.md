@@ -4,7 +4,7 @@ title: Real People
 headline: Microsoft
 isActive: true
 order: 400
-thumbnail: assets/simon-jacomet.jpg
+thumbnail: assets/realpeople_x.jpg
 videos:
   - type: '"Steven Mancusi"'
     url: 'https://player.vimeo.com/video/199375987'
