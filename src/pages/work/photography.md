@@ -4,7 +4,7 @@ title: ' '
 headline: Photography
 isActive: true
 order: 900
-thumbnail: /assets/field.jpg
+thumbnail: assets/surface-uncanny-0.jpg
 videos: []
 images:
   - /assets/surface-uncanny-0.jpg
