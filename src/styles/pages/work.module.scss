@@ -4,6 +4,10 @@
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
-  grid-gap: map-get($app, gap);;
-  margin-bottom: map-get($app, gap);;
+  grid-gap: map-get($app, gap);
+  margin-bottom: map-get($app, gap);
+
+  @media screen and (min-width: 500px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
