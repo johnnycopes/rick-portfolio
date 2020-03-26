@@ -14,6 +14,8 @@ videos:
     url: 'https://player.vimeo.com/video/250293659'
   - type: '"Victoria Alonso"'
     url: 'https://player.vimeo.com/video/199724673'
+  - type: '"Taylor Church"'
+    url: 'https://player.vimeo.com/video/401017958'
   - type: '"Hulford Quads"'
     url: 'https://player.vimeo.com/video/199724222'
   - type: '"Tim Flack"'
