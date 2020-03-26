@@ -4,7 +4,7 @@ title: Miscellaneous Digital
 headline: Microsoft
 isActive: true
 order: 800
-thumbnail: assets/digitalsizzle_x.jpg
+thumbnail: assets/digitalsizzle_x2.jpg
 videos:
   - type: '"King of Inking"'
     url: 'https://player.vimeo.com/video/250293928'
