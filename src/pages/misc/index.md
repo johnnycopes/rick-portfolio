@@ -123,6 +123,15 @@ songs:
   - title: Country Grammar
     artist: Nelly
     url: 'https://www.youtube.com/watch?v=Y5qKNlcUwKs'
+  - title: Tokyo Drifting
+    artist: Glass Animals + Denzel Curry
+    url: 'https://www.youtube.com/watch?v=R_7HqeukRrI'
+  - title: Crew
+    artist: Goldlink
+    url: 'https://www.youtube.com/watch?v=nhNqbe6QENY'
+  - title: Rill Rill
+    artist: Sleigh Bells
+    url: 'https://www.youtube.com/watch?v=nmFgejWZjtg'
 instagrams:
   - SamsonTheDood
   - JakeLikesOnions
