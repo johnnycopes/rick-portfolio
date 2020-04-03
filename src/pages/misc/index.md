@@ -111,6 +111,18 @@ songs:
   - artist: Kendrick Lamar
     title: Humble
     url: 'https://www.youtube.com/watch?v=tvTRZJ-4EyI&feature=youtu.be'
+  - title: Lemon
+    artist: N.E.R.D. + Rihanna
+    url: 'https://www.youtube.com/watch?v=L_u97PqWX6g'
+  - title: Da Rockwilder
+    url: 'https://www.youtube.com/watch?v=WCYy8jpp7R8'
+    artist: Method Man + Redman
+  - title: Feel So Good
+    artist: Mase
+    url: 'https://www.youtube.com/watch?v=rIvEiTrq9kk'
+  - title: Country Grammar
+    artist: Nelly
+    url: 'https://www.youtube.com/watch?v=Y5qKNlcUwKs'
 instagrams:
   - SamsonTheDood
   - JakeLikesOnions
