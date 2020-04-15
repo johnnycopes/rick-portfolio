@@ -7,5 +7,5 @@ order: 250
 thumbnail: assets/sentravsbmw_x.jpg
 videos:
   - type: '"Nissan Sentra vs. BMW 3 Series"'
-    url: 'https://player.vimeo.com/video/'
+    url: 'https://player.vimeo.com/video/407676592'
 ---
