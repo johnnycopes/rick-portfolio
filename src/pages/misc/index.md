@@ -71,6 +71,8 @@ websites:
     url: 'http://offliberty.com/'
   - name: Angry Post Vendor
     url: 'https://twitter.com/AngryPostVendor?s=20'
+  - name: Ad-Aged
+    url: 'https://adaged.blogspot.com/'
 songs:
   - artist: Anderson Paak
     title: Am I Wrong
