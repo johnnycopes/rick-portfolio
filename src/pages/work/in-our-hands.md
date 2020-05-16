@@ -2,7 +2,7 @@
 templateKey: project
 title: In Our Hands
 headline: Dial
-isActive: false
+isActive: true
 order: 50
 thumbnail: assets/dial_inourhands_x.jpg
 videos:
