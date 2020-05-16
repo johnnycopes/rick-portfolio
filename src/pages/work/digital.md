@@ -1,6 +1,6 @@
 ---
 templateKey: project
-title: Miscellaneous Interactive
+title: Miscellaneous Interactive/Digital
 headline: Microsoft
 isActive: true
 order: 800
