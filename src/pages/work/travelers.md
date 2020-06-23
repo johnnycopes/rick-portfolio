@@ -1,7 +1,7 @@
 ---
 templateKey: project
-title: Travelers
-headline: A Better Tomorrow
+title: A Better Tomorrow
+headline: Travelers
 isActive: false
 order: 250
 thumbnail: assets/travelers_abt.jpg
