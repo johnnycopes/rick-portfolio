@@ -2,7 +2,7 @@
 templateKey: project
 title: Pass it On
 headline: Travelers
-isActive: true
+isActive: false
 order: 40
 thumbnail: assets/travelers_pio.jpg
 videos:
