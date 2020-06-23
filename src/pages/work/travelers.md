@@ -7,5 +7,5 @@ order: 250
 thumbnail: assets/travelers_abt.jpg
 videos:
   - type: '"A Better Tomorrow"'
-    url: 'https://player.vimeo.com/video/'
+    url: 'https://player.vimeo.com/video/431853544'
 ---
