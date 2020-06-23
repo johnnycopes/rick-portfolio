@@ -1,6 +1,6 @@
 ---
 templateKey: project
-title: For Whoever You Want 2B 2
+title: For Whoever You Want 2B
 headline: Got2B
 isActive: true
 order: 149
