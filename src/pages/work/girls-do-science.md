@@ -3,7 +3,7 @@ templateKey: project
 title: Girls Do Science
 headline: Microsoft
 isActive: true
-order: 300
+order: 350
 thumbnail: assets/girlsdoscience_x.jpg
 videos:
   - type: '"Girls Do Science"'
