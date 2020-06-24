@@ -2,7 +2,7 @@
 templateKey: project
 title: A Better Tomorrow
 headline: Travelers
-isActive: false
+isActive: true
 order: 250
 thumbnail: assets/travelers_abt.jpg
 videos:
