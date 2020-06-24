@@ -1,6 +1,6 @@
 ---
 templateKey: project
-title: ' '
+title: ' Art of Idea'
 headline: Office 365
 isActive: true
 order: 200
