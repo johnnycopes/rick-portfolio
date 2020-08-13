@@ -144,7 +144,6 @@ instagrams:
   - MiddleClassFancy
   - MillerHighLife
   - AdamLucasNyc
-  - EmRata
   - LAflare1017
   - DonaldTrumpDoingThings
   - Beefcake_Boys_Soaps
