@@ -2,7 +2,7 @@
 templateKey: project
 title: ' '
 headline: Photography
-isActive: true
+isActive: false
 order: 900
 thumbnail: assets/surface-uncanny-0.jpg
 videos: []
