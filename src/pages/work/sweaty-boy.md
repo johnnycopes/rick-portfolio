@@ -3,7 +3,7 @@ templateKey: project
 title: Sweaty Boy
 headline: Mountain Dew
 isActive: true
-order: 125
+order: 24
 thumbnail: assets/sweaty_boy_x.jpg
 videos:
   - type: '"Sweaty Boy"'
