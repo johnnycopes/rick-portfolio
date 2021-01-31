@@ -3,7 +3,7 @@ templateKey: project
 title: Major Melon
 headline: Mountain Dew
 isActive: true
-order: 20
+order: 15
 thumbnail: assets/mm_teaser_x.jpg
 videos:
   - type: Teaser
