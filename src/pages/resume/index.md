@@ -1,5 +1,5 @@
 ---
 templateKey: resume
 resume: /assets/rick-segal-resume.pdf
-file: assets/ricksegal_resume_1.pdf
+file: assets/rick_segal_resume.pdf
 ---
