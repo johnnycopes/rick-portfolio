@@ -6,14 +6,16 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`300`, `400`]
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Roboto`,
+              variants: [`300`, `400`]
+            },
+          ],
+        },
       },
     },
     `gatsby-plugin-transition-link`,
