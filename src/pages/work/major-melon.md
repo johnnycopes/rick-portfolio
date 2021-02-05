@@ -1,6 +1,6 @@
 ---
 templateKey: project
-title: Major Melon Super Bowl
+title: Major Melon | Super Bowl
 headline: Mountain Dew
 isActive: true
 order: 15
