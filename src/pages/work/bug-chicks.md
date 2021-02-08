@@ -12,14 +12,4 @@ videos:
     url: 'https://player.vimeo.com/video/199376306'
   - type: '"Tim Flack"'
     url: 'https://player.vimeo.com/video/199376398'
-  - type: '"Victoria Alonso"'
-    url: 'https://player.vimeo.com/video/199724673'
-  - type: '"Tony Jackson"'
-    url: 'https://player.vimeo.com/video/250293659'
-  - type: '"Katie Button"'
-    url: 'https://player.vimeo.com/video/250293749'
-  - type: Marco Saldana
-    url: 'https://player.vimeo.com/video/401062231'
-  - type: '"Yasmin Belo-Osagie"'
-    url: 'https://player.vimeo.com/video/201602899'
 ---
