@@ -4,7 +4,7 @@ title: Real People
 headline: Microsoft
 isActive: true
 order: 650
-thumbnail: assets/katie-button.jpg
+thumbnail: assets/katiebutton_x.jpg
 videos:
   - type: '"Tony Jackson"'
     url: 'https://player.vimeo.com/video/250293659'
