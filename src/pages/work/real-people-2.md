@@ -1,6 +1,6 @@
 ---
 templateKey: project
-title: Real People 2
+title: Real People
 headline: Microsoft
 isActive: true
 order: 525
