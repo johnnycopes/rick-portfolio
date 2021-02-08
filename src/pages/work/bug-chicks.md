@@ -4,7 +4,7 @@ title: Real People
 headline: Microsoft
 isActive: true
 order: 275
-thumbnail: assets/bugchicks_x.jpg
+thumbnail: assets/mancusi_x.jpg
 videos:
   - type: '"Steven Mancusi"'
     url: 'https://player.vimeo.com/video/199375987'
