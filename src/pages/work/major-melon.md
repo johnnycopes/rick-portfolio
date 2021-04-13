@@ -12,4 +12,8 @@ videos:
     url: 'https://player.vimeo.com/video/506759191'
   - type: 'Teaser #2'
     url: 'https://player.vimeo.com/video/508665549'
+  - type: Behind The Scenes (VFX)
+    url: 'https://player.vimeo.com/video/519152989'
+  - type: Case Study
+    url: 'https://player.vimeo.com/video/536511625'
 ---
