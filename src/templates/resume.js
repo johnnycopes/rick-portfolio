@@ -11,7 +11,7 @@ import Button from "../components/Button"
 
 const ResumeTemplate = ({ data, transitionStatus }) => {
   const resume = data.markdownRemark.frontmatter.resume.publicURL
-  const correctPassword = process.env.GATSBY_RESUME_PASSWORD
+  const correctPassword = "TEST"
   const [ showResume, setShowResume ] = useState(false);
   const [ password, setPassword ] = useState("")
   const [ error, setError ] = useState(false)
