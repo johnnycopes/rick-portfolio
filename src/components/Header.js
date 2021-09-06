@@ -71,7 +71,7 @@ const Header = () => {
             link="/misc"
             applyActiveClass={true}
             >
-            <Bird />
+            misc
           </InternalLink>
         </nav>
       </div>

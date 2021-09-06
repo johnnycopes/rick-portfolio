@@ -37,7 +37,7 @@ const IndexPage = () => (
         link="/misc"
         >
         <Button>
-          <Bird />
+          misc
         </Button>
       </InternalLink>
     </div>
