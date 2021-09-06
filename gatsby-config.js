@@ -75,7 +75,7 @@ module.exports = {
         name: `rick-segal-portfolio`,
         short_name: `rick-segal`,
         start_url: `/`,
-        // icon: `src/assets/seagull.jpg`, // This path is relative to the root of the site.
+        icon: `src/assets/seagull.jpg`, // This path is relative to the root of the site.
       },
     },
     {
