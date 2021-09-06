@@ -6,7 +6,6 @@ import SEO from "../components/Seo"
 import Name from "../components/Name"
 import Button from "../components/Button"
 import InternalLink from "../components/InternalLink"
-import Bird from "../components/Bird"
 
 const IndexPage = () => (
   <Layout
@@ -37,7 +36,7 @@ const IndexPage = () => (
         link="/misc"
         >
         <Button>
-          <Bird />
+          misc
         </Button>
       </InternalLink>
     </div>

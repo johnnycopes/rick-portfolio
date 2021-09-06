@@ -9,7 +9,6 @@ import styles from "../styles/components/Header.module.scss"
 import Name from "./Name"
 import InternalLink from "./InternalLink"
 import ExternalLink from "./ExternalLink"
-import Bird from "./Bird";
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -71,7 +70,7 @@ const Header = () => {
             link="/misc"
             applyActiveClass={true}
             >
-            <Bird />
+            misc
           </InternalLink>
         </nav>
       </div>
