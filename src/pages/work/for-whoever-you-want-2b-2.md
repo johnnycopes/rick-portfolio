@@ -3,7 +3,7 @@ templateKey: project
 title: For Whoever You Want 2B
 headline: Got2B
 isActive: true
-order: 100
+order: 24
 thumbnail: assets/got2b_x_v2.jpg
 videos:
   - type: '"Garbled Up"'
