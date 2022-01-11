@@ -16,4 +16,6 @@ videos:
     url: 'https://player.vimeo.com/video/611107642'
   - type: '''Ad Agencies'''
     url: 'https://player.vimeo.com/video/611109069'
+  - type: '''Lobbyists'''
+    url: 'https://player.vimeo.com/video/611093743'
 ---
