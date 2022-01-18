@@ -3,7 +3,7 @@ templateKey: project
 title: Love
 headline: TD Bank
 isActive: true
-order: 520
+order: 500
 thumbnail: assets/td_love_x.jpg
 videos:
   - type: '"Love"'
