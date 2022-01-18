@@ -3,7 +3,7 @@ templateKey: project
 title: Real People
 headline: Microsoft
 isActive: true
-order: 525
+order: 500
 thumbnail: assets/realpeople_x.jpg
 videos:
   - type: '"Taylor Church"'
