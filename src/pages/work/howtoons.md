@@ -3,7 +3,7 @@ templateKey: project
 title: ' Art of Ideas'
 headline: Office 365
 isActive: true
-order: 273
+order: 275
 thumbnail: assets/office365_x.jpg
 videos:
   - type: '"Howtoons"'
