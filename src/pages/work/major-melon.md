@@ -3,7 +3,7 @@ templateKey: project
 title: Major Million | Super Bowl
 headline: Mountain Dew
 isActive: true
-order: 100
+order: 60
 thumbnail: assets/mm_teaser_x.jpg
 videos:
   - type: '"Major Million" (2021 Super Bowl)'
