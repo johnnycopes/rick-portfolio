@@ -3,7 +3,7 @@ templateKey: project
 title: Melt
 headline: Mountain Dew
 isActive: true
-order: 140
+order: 100
 thumbnail: assets/melt_x.jpg
 videos:
   - type: '''Melt'''
