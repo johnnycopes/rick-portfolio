@@ -3,7 +3,7 @@ templateKey: project
 title: They're Messing With Our Heads
 headline: Truth Initiative
 isActive: true
-order: 40
+order: 175
 thumbnail: assets/gas_station_x.jpg
 videos:
   - type: '''Gas Station'''
