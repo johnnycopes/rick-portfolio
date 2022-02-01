@@ -3,7 +3,7 @@ templateKey: project
 title: Every Time
 headline: Mountain Dew
 isActive: true
-order: 200
+order: 130
 thumbnail: assets/everytime_x.jpg
 videos:
   - type: '''Every Time'''
