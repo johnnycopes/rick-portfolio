@@ -3,7 +3,7 @@ templateKey: project
 title: Catch of a Lifetime
 headline: FanDuel
 isActive: true
-order: 110
+order: 115
 thumbnail: assets/fd_catch_x.jpg
 videos:
   - type: '''Catch of a Lifetime'''
